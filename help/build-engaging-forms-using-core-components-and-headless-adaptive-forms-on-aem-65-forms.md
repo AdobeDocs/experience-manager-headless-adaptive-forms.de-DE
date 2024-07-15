@@ -10,15 +10,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '2189'
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+workflow-type: tm+mt
+source-wordcount: '2130'
 ht-degree: 100%
 
 ---
 
-# Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless Adaptive Formulare in AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
+# Erstellen von ansprechenden Formularen mit Kernkomponenten und adaptiven Headless-Formularen in AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
 ## Labor-Übersicht {#lab-overview}
 

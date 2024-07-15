@@ -36,7 +36,7 @@ Um dieses praktische Labor zu nutzen:
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installationsanleitung für Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Aktivieren der adaptiven Forms-Kernkomponenten](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) für Ihre as a Cloud Service AEM Forms-Umgebung.
+* [Aktivieren Sie die adaptiven Forms-Kernkomponenten](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) für Ihre AEM Forms as a Cloud Service-Umgebung.
 
 * Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. Die Beispiele im Dokument verwenden Microsoft Visual Studio Code.
 
@@ -103,7 +103,7 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Klicken Sie auf die Registerkarte **Stil** und wählen Sie das Design **wknd-theme** wie unten gezeigt:
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Klicken Sie auf **Einsendung** und wählen Sie die **An REST-Endpunkt übermitteln** und geben Sie den öffentlichen Ordner im **URL für die POST-Anforderung** wie unten gezeigt:
+   1. Klicken Sie auf die Registerkarte **Übermittlung** , wählen Sie die Karte **An REST-Endpunkt übermitteln** aus und geben Sie den öffentlichen Papierkorb im Feld **URL für die POST-Anforderung** an, wie unten dargestellt:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel für Ihr Formular an. Beispiel: **Registrierung**. Klicken Sie auf **Erstellen**.
@@ -223,7 +223,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    >[!NOTE]
    > So erstellen Sie eine lokale Benutzerin oder einen lokalen Benutzer:
-   > Navigieren Sie zu `AEM Home` > `Tools` > `Security` > `Users`
+   > Gehe zu `AEM Home` > `Tools` > `Security` > `Users`
    > Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe &quot;forms-users&quot;ist.
 
 
@@ -237,7 +237,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    >[!NOTE]
    >
-   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über die `npm notice Run npm nstall -g npm@9.6.0` -Befehl, ignorieren Sie die Nachricht.
+   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über den Befehl `npm notice Run npm nstall -g npm@9.6.0` zu aktualisieren, ignorieren Sie die Nachricht.
    > * Führen Sie keine anderen npm-Befehle aus, es sei denn, Sie werden dazu in der Arbeitsmappe angewiesen.
 
 1. Führen Sie nun den folgenden Befehl aus, um eine Vorschau des Formulars anzuzeigen.
@@ -248,9 +248,9 @@ Richten Sie ein lokales Repository des Designs ein:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Warten Sie nach Ausführung des oben genannten Befehls auf die `webpack compiled` und Sie zu einer AEM Anmeldeseite weitergeleitet werden.
+   Warten Sie nach Ausführung des oben genannten Befehls auf die Meldung `webpack compiled` und Sie werden zu einer AEM Anmeldeseite umgeleitet.
 
-1. Klicks **Lokale Anmeldung (nur Admin-Aufgaben)** auf der AEM Anmeldeseite.
+1. Klicken Sie auf der AEM Anmeldeseite auf **Lokal anmelden (nur Admin-Aufgaben)** .
 1. Geben Sie die Anmeldedaten für den erstellten lokalen Benutzer ein und das Formular wird auf einer Browser-Registerkarte angezeigt.
 
    >[!NOTE]

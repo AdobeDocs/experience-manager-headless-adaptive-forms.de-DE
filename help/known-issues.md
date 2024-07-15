@@ -4,8 +4,8 @@ description: Bekannte Probleme mit adaptiven Headless-Formularen
 keywords: headless, adaptive Formulare, bekannte Probleme
 hide: true
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
-workflow-type: ht
-source-wordcount: '102'
+workflow-type: tm+mt
+source-wordcount: '111'
 ht-degree: 100%
 
 ---

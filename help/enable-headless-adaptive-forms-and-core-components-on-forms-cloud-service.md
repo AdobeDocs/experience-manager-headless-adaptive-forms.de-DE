@@ -12,10 +12,10 @@ contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
 hidefromtoc: true
-exl-id: 7c545ca6-cb2d-4d28-b9e8-b6efe3faee00
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
-workflow-type: ht
-source-wordcount: '923'
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -48,28 +48,28 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
 
 ## 1. Klonen Sie Ihr AEM Forms as a Cloud Service Git-Repository {#clone-git-repository}
 
-1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihr Unternehmen und das Programm aus.
+1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihre Organisation und Ihr Programm aus.
 
-1. Navigieren Sie zur Karte **Pipelines** auf der Seite **Programmübersicht** und klicken Sie auf **Auf Repo-Info zugreifen**, um Ihr Git-Repository zu öffnen und zu verwalten. Die Seite enthält folgende Informationen:
+1. Navigieren Sie von Ihrer **Programmübersichtsseite** zur Karte **Pipelines** und klicken Sie auf die Schaltfläche **Zugriff auf Repo Info**, um auf Ihr Git-Repository zuzugreifen und es zu verwalten. Die Seite enthält die folgenden Informationen:
 
-   * Die URL zum Cloud Manager-Git-Repository.
-   * Anmeldeinformationen für das Git-Repository (Benutzername und Kennwort) Git-Benutzername.
+   * Die URL zum Git-Repository von Cloud Manager.
+   * Anmeldeinformationen des Git-Repositorys (Benutzername und Password), Git-Benutzername.
 
    Klicken Sie auf **Kennwort generieren**, um das Kennwort anzuzeigen oder zu generieren.
 
-1. Öffnen Sie das Terminal oder die Eingabeaufforderung auf Ihrem lokalen Computer und führen Sie folgenden Befehl aus:
+1. Öffnen Sie das Terminal oder eine Eingabeaufforderung auf Ihrem lokalen Computer und führen Sie den folgenden Befehl aus:
 
    ```Shell
    git clone [Git Repository URL]
    ```
 
-   Geben Sie die Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden. Das Repository wird auf Ihrem lokalen Computer geklont.
+   Geben Sie bei Aufforderung die Anmeldeinformationen ein. Das Repository wird auf Ihrem lokalen Computer geklont.
 
 
-## 2. Fügen Sie Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository hinzu {#add-adaptive-forms-core-components-dependencies}
+## 2. Hinzufügen von Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
 
 1. Öffnen Sie Ihren Git-Repository-Ordner in einem einfachen Texteditor. Beispiel: VS Code.
-1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml` zur Bearbeitung.
+1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml`, um sie zu bearbeiten.
 1. Ersetzen Sie die Versionen der Komponenten `core.forms.components.version`, `core.forms.components.af.version` und `core.wcm.components.version` durch die in der [Dokumentation zu Kernkomponenten](https://github.com/adobe/aem-core-forms-components) angegebenen Versionen. Wenn die Komponente nicht vorhanden ist, fügen Sie diese Komponenten hinzu.
 
    ```XML
@@ -82,9 +82,9 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    </properties>
    ```
 
-   ![Erwähnung der neuesten Version der Forms-Kernkomponenten](/help/assets/latest-forms-component-version.png)
+   ![Erwähnung der neuesten Version der Kernkomponenten für adaptive Formulare](/help/assets/latest-forms-component-version.png)
 
-1. Fügen Sie im Abschnitt Abhängigkeiten der Datei `[AEM Repository Folder]\pom.xml` folgende Abhängigkeiten hinzu und speichern Sie die Datei.
+1. Fügen Sie im Abschnitt „Abhängigkeiten“ der Datei `[AEM Repository Folder]\pom.xml` die folgenden Abhängigkeiten hinzu und speichern Sie die Datei.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -145,7 +145,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml`, um sie zu bearbeiten. Fügen Sie die folgenden Abhängigkeiten im Abschnitt `<embeddeds>` hinzu und speichern Sie die Datei.
+1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml`, um sie zu bearbeiten. Fügen Sie die folgenden Abhängigkeiten in den Abschnitt `<embeddeds>` ein und speichern Sie die Datei.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -202,7 +202,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    >
    >  Ersetzen Sie `${appId}` durch Ihre appId.
    >
-   >  Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Ausdruck `-packages/application/install`. Der Text vor dem Ausdruck `-packages/application/install` ist Ihre `${appId}`. Im folgenden Code ist zum Beispiel `myheadlessform` die `${appId}`.
+   >  Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Begriff `-packages/application/install`. Der Text vor dem Begriff `-packages/application/install` ist Ihre `${appId}`. Der folgende Code `myheadlessform` ist zum Beispiel `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -213,7 +213,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    >             </embedded>
    >   ```
 
-1. Fügen Sie folgende Abhängigkeiten im Abschnitt `<dependencies>` der Datei `[AEM Repository Folder]/all/pom.xml` hinzu und speichern Sie die Datei:
+1. Fügen Sie im Abschnitt `<dependencies>` der Datei `[AEM Repository Folder]/all/pom.xml` die folgenden Abhängigkeiten hinzu und speichern Sie die Datei:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -294,7 +294,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
 
 1. So übertragen Sie Code in Ihr Git-Repository:
    1. Öffnen Sie das Terminal oder die Eingabeaufforderung.
-   1. Navigieren Sie zu Ihrem `[AEM Repository Folder]` und führen Sie folgende Befehle in der angegebenen Reihenfolge aus
+   1. Navigieren Sie zu Ihrem `[AEM Repository Folder]` und führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus
 
       ```Shell
       git add pom.xml
@@ -304,20 +304,20 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
       git push origin
       ```
 
-1. Nach der Übertragung der Dateien in das Git-Repository können Sie die [Pipeline ausführen](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de).
+1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de).
 
-   Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten für adaptive Formulare für die entsprechende Umgebung aktiviert. Außerdem werden eine Vorlage für adaptive Formulare (Kernkomponenten) und ein Canvas 3.0-Design zu Ihrer Forms as a Cloud Service-Umgebung hinzugefügt, mit denen Sie adaptive Formulare auf Grundlage der Kernkomponenten anpassen und erstellen können.
+   Nach erfolgreicher Ausführung der Pipeline sind die Kernkomponenten für adaptive Formulare für die entsprechende Umgebung aktiviert. Außerdem werden Ihrer Forms as a Cloud Service-Umgebung eine Vorlage für adaptive Formulare (Kernkomponenten) sowie ein Design für Canvas 3.0 hinzugefügt, was Ihnen Optionen zum Anpassen und Erstellen von Kernkomponenten auf Basis von adaptiven Formularen bietet.
 
 
 ## Häufig gestellte Fragen {#faq}
 
 ### Was sind Kernkomponenten? {#core-components}
 
-Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe standardisierter Web Content Management(WCM)-Komponenten für AEM, mit denen Sie die Entwicklungszeiten verkürzen und die Wartungskosten für Ihre Web-Seiten senken können.
+Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe von standardisierten Web Content Management(WCM)-Komponenten für AEM, die die Entwicklungszeit beschleunigen und die Wartungskosten Ihrer Websites reduzieren.
 
-### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt? {#core-components-capabilities}
+### Welche Funktionen werden hinzugefügt, wenn Kernkomponenten aktiviert sind? {#core-components-capabilities}
 
-Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, werden eine leere Vorlage für adaptive Formulare und ein Canvas 3.0-Design zu Ihrer Umgebung hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
 * Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten.
@@ -326,13 +326,13 @@ Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiv
 
 ### Sind für meine Umgebung Kernkomponenten für adaptive Formulare aktiviert? {#enable-components}
 
-So finden Sie heraus, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind:
+So prüfen Sie, ob die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind:
 
 1. [Klonen Sie Ihr AEM Forms as a Cloud Service-Repository](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml` Ihres AEM Forms Cloud Service-Git-Repositorys.
+1. Öffnen Sie die Datei `[AEM Repository Folder]/all/pom.xml` Ihres AEM Forms as a Cloud Service-Git-Repositorys.
 
-1. Suchen Sie nach folgenden Abhängigkeiten:
+1. Suchen Sie nach den folgenden Abhängigkeiten:
 
    * core-forms-components-af-core
    * core-forms-components-core
@@ -342,6 +342,6 @@ So finden Sie heraus, ob die Kernkomponenten für adaptive Formulare für Ihre U
    * core-forms-components-examples-content
 
 
-   ![Suchen Sie das Artefakt core-forms-components-af-core in all/pom.xml](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+   ![Suchen Sie das Artefakt „core-forms-components-af-core“ in „all/pom.xml“.](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    Wenn die Abhängigkeiten vorhanden sind, sind die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert.
