@@ -5,8 +5,8 @@ keywords: headless, adaptive Formulare, bekannte Probleme
 hide: true
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
