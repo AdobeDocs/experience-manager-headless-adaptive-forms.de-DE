@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: headless, adaptives Formular, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Mit der Starter-App können Sie ein benutzerdefiniertes adaptives Headless-Formu
 
 ## Ist es möglich, adaptive Headless-Formulate mit benutzerdefinierten Frameworks zu verwenden?
 
-Adaptive Headless-Formulare basieren auf einer [Standardspezifikation](/help/assets/Headless-Adaptive-Form-Specification.pdf). Sie können die Spezifikation erweitern, um sie zum Erstellen benutzerdefinierter Komponenten zu verwenden. Zum Beispiel Komponenten für Chakra UI, Vue.js und mehr.
+Adaptive Headless-Formulare basieren auf einer [Standardspezifikation](/help/assets/headless-adaptive-forms-specification.pdf). Sie können die Spezifikation erweitern, um sie zum Erstellen benutzerdefinierter Komponenten zu verwenden. Zum Beispiel Komponenten für Chakra UI, Vue.js und mehr.
 
 ## Unterstützen adaptive Headless-Formulare kaskadierende Felder?
 

@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: Headless, adaptives Formular, Architektur
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '918'
+ht-degree: 97%
 
 ---
 
@@ -76,6 +76,8 @@ Das Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, d
 
 Alle diese Komponenten sind im AEM-Archetyp enthalten. Wenn Sie mit dem AEM-Archetyp 37 oder später ein Projekt für adaptive Headless-Formulare erstellen, ist die neueste Version der oben aufgeführten Bibliotheken im Projekt enthalten.
 
+* **Code-Playground**: [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) ist eine interaktive Umgebung, in der Entwicklerinnen und Entwickler die Funktionen von Headless Adaptive Forms experimentieren, kennenlernen und testen können.
+
 **Starter Application**: Adobe hat auch eine Anwendung für die ersten Schritte veröffentlicht, die Ihnen dabei hilft, schnell mit adaptiven Headless-Formularen zu beginnen.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Visual Studio Code-Erweiterung**: [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) zur Unterstützung beim Erstellen einer gültigen JSON-Struktur. Sie bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten in einer JSON-Struktur.
 
-**Adaptive Formulare Version 2.0 – Spezifikation**: Die Spezifikation für adaptive Formulare Version 2.0 bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die zum Definieren adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf)-Format verfügbar.
-
 **HTTP- und JavaScript-APIs**: [HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) ermöglichen Ihnen das Auflisten, Abrufen, Validieren, Senden und Verfolgen des Übermittlungsstatus von Headless-Formularen. [JS-APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helfen Ihnen, adaptive Headless-Formulare mit jedem JavaScript-basierten UI-Framework zu verwenden.
 
 **JSON-Formel**: Hierbei handelt es sich um eine Implementierung der Grammatik von Formularausdrücken, die Sie beim Abfragen der JSON-Struktur und beim Erstellen von Regeln für adaptive Headless-Formulare unterstützt. Die Grammatik ist eine Mischung aus tabellenähnlichen Funktionen und Operatoren und [JMESPath](https://jmespath.org/), einer JSON-Abfragesprache. Sie können den [Spielplatz](https://opensource.adobe.com/json-formula/dist/index.html) nutzen, um die Syntax und Funktionen der JSON-Formeln auszuprobieren.
+
+**Adaptive Formulare Version 2.0 – Spezifikation**: Die Spezifikation für adaptive Formulare Version 2.0 bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die zum Definieren adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/headless-adaptive-forms-specification.pdf)-Format verfügbar.
+
