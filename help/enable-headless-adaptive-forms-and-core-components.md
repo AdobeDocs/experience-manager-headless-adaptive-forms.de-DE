@@ -6,10 +6,10 @@ seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms wi
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Durch die Bereitstellung des auf AEM Archetyp 41 oder höher-basierenden Projekt
 
 Vor der Aktivierung von adaptiven Headless-Formularen in der AEM 6.5 Forms-Umgebung:
 
-* [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de).
+* [Aktualisieren auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de).
 
 * Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -48,7 +48,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
       -D appId="myform" ^
       -D groupId="com.myform" ^
       -D includeFormsenrollment="y" ^
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    * Linux oder Apple macOS
@@ -62,14 +62,13 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
       -D appId="myform" \
       -D groupId="com.myform" \
       -D includeFormsenrollment="y" \
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
-   Beachten Sie beim Ausführen des oben genannten Befehls die folgenden Punkte:
+   Beachten Sie beim Ausführen des obigen Befehls Folgendes:
 
    * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich appTitle, appId und groupId. Legen Sie außerdem die Werte für includeFormsenrollment auf „y“ fest. Wenn Sie Forms Portal verwenden, legen Sie die Option _includeExamples=y_ fest, um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
 
-   * Ändern Sie „aemVersion“ nicht von 6.5.15.0 in etwas Anderes.
 
 1. (Nur für Projekte, die auf dem Archetyp Version 41 basieren) Nachdem das AEM-Archetyp-Projekt erstellt wurde, aktivieren Sie Designs für auf Kernkomponenten basierende adaptive Formulare. So aktivieren Sie Designs:
 
@@ -93,8 +92,6 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    1. Öffnen Sie den [AEM-Archetyp-Projektordner]/pom.xml zur Bearbeitung.
    1. Legen Sie die Version von `core.forms.components.version` und `core.forms.components.af.version` auf die [neueste Version der Forms-Kernkomponenten](https://github.com/adobe/aem-core-forms-components/tree/release/650) fest.
-
-      ![Erwähnung der neuesten Version der Forms-Kernkomponenten](/help/assets/latest-forms-component-version.png)
 
    1. Speichern und schließen Sie die Datei.
 
