@@ -86,6 +86,7 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 
    1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,23 +94,29 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 1. Erstellen Sie ein adaptives Formular mithilfe der Assistenten-Oberfläche:
 
    1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur Web-Benutzeroberfläche von AEM Forms als Cloud Service und dort zu „Formulare und Dokumente“.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Klicken Sie **Erstellen** > **Adaptives Formular**.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Wählen Sie die Vorlage **Leer mit Kernkomponenten** aus dem Vorlagenauswahlbildschirm wie unten gezeigt:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Klicken Sie auf die Registerkarte **Stil** und wählen Sie das Design **wknd-theme** wie unten gezeigt:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Klicken Sie auf **Übermittlung** und wählen Sie die Karte **An REST-Endpunkt übermitteln** aus und geben Sie den öffentlichen Ordner in das Feld **URL für die POST-** ein, wie unten dargestellt:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel in Ihrem Formular an. Beispiel: **Registrierung**. Klicken Sie auf **Erstellen**.
 
    1. Der Editor für adaptive Formulare wird geöffnet. Schließen Sie alle Popups oder Dialogfelder für Voreinstellungen oder Informationen. Klicken Sie in der linken Leiste auf den Komponenten **Browser und fügen Sie die Komponenten** Kopfzeile“ und **Fußzeile** oben und unten im leeren Formular hinzu.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser, um ein Formular ähnlich dem folgenden zu erstellen:
@@ -121,6 +128,7 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Klicken Sie auf die **Telefonnummern**-Komponente, damit das Popup-Menü angezeigt wird. Klicken Sie im Menü auf das **Schraubensymbol**, um das Feld zu konfigurieren.
 
    1. Öffnen Sie die Registerkarte **Validierungen**, markieren Sie das Feld **Erforderlich**, und klicken Sie auf **Fertig**. Die Erfolgsmeldung wird angezeigt.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -132,9 +140,11 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Füllen Sie das Formular mit Platzhalterdaten aus.
 
    1. Senden Sie das Formular ab.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. Überprüfen Sie in der Registerkarte „Anfrage-Container“ die gesendeten Daten.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Hinzufügen von Interaktivität zum Formular mit Regeln:

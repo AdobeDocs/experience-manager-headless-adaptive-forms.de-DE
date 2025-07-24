@@ -86,9 +86,11 @@ Als Business-Anwenderin bzw. -Anwender werden Sie den Editor für adaptive Forms
 1. Erstellen Sie einen Übermittlungsendpunkt für das Formular:
 
    1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Dieser bestimmte Endpunkt dient als Beispiel für das Senden und Anzeigen von Daten. In der eigentlichen Produktion verwenden Sie eigene Endpunkte oder Datenquellen, um die erfassten Daten zu speichern.
@@ -98,12 +100,15 @@ Als Business-Anwenderin bzw. -Anwender werden Sie den Editor für adaptive Forms
    1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur AEM Forms-Web-Benutzeroberfläche und dann zu **Forms** > **Forms und Dokumente**.
 
    1. Klicken Sie auf **Erstellen** und wählen Sie „Adaptives Formular“.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Wählen Sie die Vorlage **Leer mit Kernkomponenten** auf dem Vorlagenauswahlbildschirm, wie unten gezeigt, und klicken Sie auf **Weiter**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Geben Sie `Contact us` als **Titel** des Formulars ein. Stellen Sie sicher, dass der **Name** des Formulars `contact-us` lautet.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Erstellen**. Es öffnet sich ein Dialogfeld.
