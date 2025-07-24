@@ -75,7 +75,7 @@ Es liegt im ZIP-Format vor. Die unterstützte Version ist aem-sdk-2022.7.8085.20
 
    >[!NOTE]
    >
-   > Doppelklicken Sie nicht auf die JAR-Datei, um sie zu starten. Dies führt zu einem [Fehler](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Doppelklicken Sie nicht auf die JAR-Datei, um sie zu starten. Dies führt zu einem [Fehler](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Öffnen Sie eine Eingabeaufforderung:
    * Verwenden Sie unter Windows die Option **Als Administrator ausführen**, um die Eingabeaufforderung im erhöhten Modus zu öffnen.

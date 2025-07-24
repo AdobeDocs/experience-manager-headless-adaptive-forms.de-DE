@@ -125,7 +125,7 @@ Wenn Sie das Projekt in Ihrer AEM SDK-Instanz bereitstellen, werden die Funktion
    Es kann lange dauern, die Dateiabhängigkeiten zu beheben und das Projekt bereitzustellen. Wenn bei der Bereitstellung des Projekts ein Fehler auftritt, finden Sie im Artikel [Fehlerbehebung](troubleshooting.md) Informationen zu häufigen Problemen und deren Behebung.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=de#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Erstellen des JSON-Schemas des adaptiven Headless-Formulars und Hochladen in Ihre AEM SDK-Instanz {#create-add-json-representation-of-headless-adaptive-forms}
@@ -180,9 +180,9 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de#building-and-installing).
     
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=de#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. Erstellen eines adaptiven Formulars basierend auf der Vorlage „Leer mit Kernkomponenten“ {#create-adaptive-form-with-blank-with-core-components-template}
 

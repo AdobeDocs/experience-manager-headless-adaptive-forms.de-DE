@@ -610,10 +610,10 @@ Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Hea
 
 * [Einführung zu Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aktualisierungsstile für die auf Kernkomponenten basierenden adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Adaptive Headless-Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

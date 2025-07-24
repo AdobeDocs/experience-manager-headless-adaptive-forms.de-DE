@@ -22,7 +22,7 @@ Durch die Bereitstellung des auf AEM Archetyp 41 oder höher-basierenden Projekt
 
 Bevor Sie Headless Adaptive Forms in der AEM 6.5 Forms-Umgebung aktivieren,
 
-* [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+* [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi).
 

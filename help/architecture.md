@@ -76,7 +76,7 @@ Das Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, d
 
 Alle diese Komponenten sind im AEM-Archetyp enthalten. Wenn Sie ein AEM-Archetyp 37- oder neueres Projekt für Headless-adaptive Formulare erstellen, wird die neueste Version der oben aufgeführten Bibliotheken in das Projekt aufgenommen.
 
-* **Code-Playground**: [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) ist eine interaktive Umgebung, in der Entwickler mit den Funktionen von Headless Adaptive Forms experimentieren, mehr darüber erfahren und sie testen können.
+* **Code-Playground**: [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de) ist eine interaktive Umgebung, in der Entwickler mit den Funktionen von Headless Adaptive Forms experimentieren, mehr darüber erfahren und sie testen können.
 
 **Starter Application**: Adobe hat auch eine Anwendung für die ersten Schritte veröffentlicht, die Ihnen dabei hilft, schnell mit adaptiven Headless-Formularen zu beginnen.
 
