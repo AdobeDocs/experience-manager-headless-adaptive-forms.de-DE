@@ -1,15 +1,14 @@
 ---
 title: Aktivieren von adaptiven Headless-Formularen in AEM 6.5 Forms
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM 6.5 Forms
-description: In unserer Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie in AEM 6.5 Forms adaptive Headless-Formulare aktivieren können. Unser Tutorial führt Sie durch den Prozess, wodurch Sie diese leistungsstarke Funktion einfach in Ihre Website integrieren und Ihr Kundenerlebnis verbessern können.
-seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
+description: Erfahren Sie mit der schrittweisen Anleitung von Adobe, wie Sie Headless Adaptive Forms auf AEM 6.5 Forms aktivieren. Dieses Tutorial führt Sie durch den Prozess, der es Ihnen erleichtert, diese leistungsstarke Funktion in Ihre Website zu integrieren und Ihr Benutzererlebnis zu verbessern.
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 96%
+source-wordcount: '728'
+ht-degree: 70%
 
 ---
 
@@ -17,25 +16,25 @@ ht-degree: 96%
 
 Um adaptive Headless-Formulare in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein auf AEM Archetyp 41 oder höher-basierendes Projekt ein und stellen Sie es für alle Ihre Authoring- und Publishing-Instanzen bereit.
 
-Durch die Bereitstellung des auf AEM Archetyp 41 oder höher-basierenden Projekts auf Ihren AEM 6.5 Forms-Instanzen erhalten Sie die Möglichkeit, [auf Kernkomponenten basierende adaptive Formulare zu erstellen](create-a-headless-adaptive-form.md). Diese Formulare werden im JSON-Format dargestellt und als adaptive Headful- und Headless-Formulare verwendet, was eine größere Flexibilität und Anpassung über verschiedene Kanäle ermöglicht, darunter Mobile, Web und native Apps.
+Durch die Bereitstellung des auf AEM Archetyp 41 oder höher-basierenden Projekts auf Ihren AEM 6.5 Forms-Instanzen erhalten Sie die Möglichkeit, [auf Kernkomponenten basierende adaptive Formulare zu erstellen](create-a-headless-adaptive-form.md). Diese Formulare werden im JSON-Format dargestellt und sowohl als `Headful` als auch als `Headless` adaptives Forms verwendet, was eine größere Flexibilität und Anpassung über eine Reihe von Kanälen hinweg ermöglicht, einschließlich mobiler, Web- und nativer Apps.
 
 ## Voraussetzungen {#prerequisites}
 
-Vor der Aktivierung von adaptiven Headless-Formularen in der AEM 6.5 Forms-Umgebung:
+Bevor Sie Headless Adaptive Forms in der AEM 6.5 Forms-Umgebung aktivieren,
 
-* [Aktualisieren auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=de).
+* [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi).
 
 * Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft Visual Studio Code.
 
-## Erstellen Sie ein auf dem neuesten AEM Archetyp basierendes Projekt und stellen Sie es bereit
+## Erstellen und Bereitstellen des neuesten AEM Archetype-basierten Projekts
 
 So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Publishing-Instanzen bereit:
 
 1. Melden Sie sich bei Ihrem Computer an, hosten Sie Ihre AEM 6.5 Forms-Instanz und führen Sie sie als Administrator aus.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal.
-1. Führen Sie den folgenden Befehl aus, um ein auf AEM-Archetyp 41 basierendes Projekt zu erstellen:
+1. Führen Sie den folgenden Befehl aus, um ein auf AEM Archetype 41 basierendes Projekt zu erstellen:
 
    * Microsoft Windows
 
@@ -51,7 +50,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
       -D aemVersion="6.5.23" 
    ```
 
-   * Linux oder Apple macOS
+   * Linux® oder Apple macOS
 
    ```Shell
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
@@ -67,7 +66,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Beachten Sie beim Ausführen des obigen Befehls Folgendes:
 
-   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich appTitle, appId und groupId. Legen Sie außerdem die Werte für includeFormsenrollment auf „y“ fest. Wenn Sie Forms Portal verwenden, legen Sie die Option _includeExamples=y_ fest, um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
+   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich appTitle, appId und groupId. Legen Sie außerdem die Werte für includeFormsEnrollment auf `y` fest. Wenn Sie Forms Portal verwenden, legen Sie die Option _includeExamples=y_ fest, um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
 
 
 1. (Nur für Projekte, die auf dem Archetyp Version 41 basieren) Nachdem das AEM-Archetyp-Projekt erstellt wurde, aktivieren Sie Designs für auf Kernkomponenten basierende adaptive Formulare. So aktivieren Sie Designs:
@@ -112,22 +111,22 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Nachdem das AEM-Archetyp-Projekt erfolgreich erstellt wurde, wird ein AEM-Paket generiert. Sie finden das Paket im [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip
 
-1. Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
+1. Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
 
 >[!NOTE]
 >
 >
 >
->Falls Sie Schwierigkeiten beim Zugriff auf das Anmeldedialogfeld auf einer Publishing-Instanz haben, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: http://[Veröffentlichungs-Server-URL]:[PORT]/system/console. Auf diese Weise können Sie auf die Anmeldung bei der Publishing-Instanz zugreifen, sodass Sie mit dem Installationsprozess fortfahren können.
+>Wenn Sie auf Schwierigkeiten stoßen, das Anmelde-Dialogfeld auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]`:[PORT]/system/console. Über diesen Prozess erhalten Sie Zugriff auf die Anmeldung bei der Veröffentlichungsinstanz und können den Installationsprozess fortsetzen.
 
 
 Die Kernkomponenten sind für Ihre Umgebung aktiviert. Eine leere, auf Kernkomponenten basierende Vorlage für ein adaptives Formular und ein Canvas 3.0-Design werden in Ihrer Umgebung bereitgestellt, sodass Sie [auf Kernkomponenten basierende adaptive Formulare erstellen können](create-a-headless-adaptive-form.md).
 
 ## Häufig gestellte Fragen
 
-### Was sind Kernkomponenten?
+### Was sind die Kernkomponenten?
 
-Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind eine Reihe standardisierter Web-Content-Management-Komponenten (WCM) für AEM, um die Entwicklungszeit zu verkürzen und die Wartungskosten Ihrer Websites zu senken.
+Die [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) sind eine Reihe standardisierter Web Content Management (WCM)-Komponenten für AEM, die die Entwicklungszeit verkürzen und die Wartungskosten Ihrer Websites senken.
 
 ### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt?
 

@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Ereignissen zum Verarbeiten und Senden von Daten aus adaptiven Headless-Formularen
-description: Verwenden von Ereignissen zum Verarbeiten und Senden von Daten aus adaptiven Headless-Formularen
+description: Verwenden Sie Ereignisse, um adaptive Formulardaten ohne Formular zu verarbeiten und zu übermitteln.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 

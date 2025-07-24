@@ -1,8 +1,8 @@
 ---
-source-git-commit: 103a0312291d4831249d32e5fea7d20e0fc99d10
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '276'
+ht-degree: 47%
 
 ---
 # Beitragen
@@ -18,7 +18,7 @@ Dieses Projekt hält den Adobe-[Verhaltenskodex](code-of-conduct.md) ein. Wir er
 
 ## Dokumentation zum Contributor Guide
 
-Siehe [Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
+Siehe [Contributor Guide](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
 
 ## Haben Sie eine Frage?
 
@@ -26,11 +26,11 @@ Melden Sie als Erstes ein Problem. Die vorhandenen Verantwortlichen bei diesem P
 
 ## Lizenzvereinbarung für Anbieter (CLA)
 
-Alle Drittanbieter-Beiträge zu diesem Projekt müssen von einer unterzeichneten Lizenzvereinbarung für Mitwirkende begleitet werden. Damit kann Adobe Ihre Beiträge als Teil des Projekts weitervertreiben. [Signieren Sie unsere CLA](http://opensource.adobe.com/cla.html). Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
+Mitwirkende müssen eine Lizenzvereinbarung für Mitwirkende unterzeichnen, bevor sie Beiträge von Drittanbietern für dieses Projekt einreichen. Diese Vereinbarung gibt Adobe die Erlaubnis, Ihre Beiträge im Rahmen des Projekts zu verteilen. [Signieren Sie Adobes CLA](https://opensource.adobe.com/cla.html). Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie sofort loslegen!
 
 ## Codeüberprüfungen
 
-Alle Übermittlungen sollten in Form von Abruf-Anfragen erfolgen und müssen von den Projektverantwortlichen geprüft werden. Weitere Informationen zum Senden von Pull-Anfragen finden Sie in der [Dokumentation zu Pull Requests auf GitHub](https://help.github.com/articles/about-pull-requests/).
+Senden Sie alle Beiträge als Pull-Anforderungen, und die Projektverantwortlichen müssen sie überprüfen. Weitere Informationen zum Senden von Pull-Anfragen finden Sie in der [Dokumentation zu Pull Requests auf GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -39,8 +39,8 @@ submitting a pull request!
 
 ## Vom Mitwirkenden zum Verantwortlichen
 
-Wir lieben Beiträge aus unserer Community! Wenn Sie sich von einem Mitwirkenden zu einem Verantwortlichen mit vollständigem Schreibzugriff entwickeln und bei Projekten mitreden möchten, müssen Sie zum Projekt eingeladen werden. Die vorhandenen Verantwortlichen verwenden einen internen Nominierungsprozess, der einen stillen Konsens (Schweigen bedeutet Genehmigung) erhalten muss, bevor Einladungen ausgesprochen werden. Wenn Sie denken, dass Sie qualifiziert sind, und umfassender involviert werden möchten, können Sie sich gerne an vorhandene Verantwortliche wenden, um ein Gespräch darüber zu führen.
+Adobe freut sich über jeden Beitrag und prüft Ihren Beitrag. Wenn Sie ein Verantwortlicher mit vollem Schreibzugriff und Mitsprache am Projekt werden möchten, müssen Sie zum Projekt eingeladen werden. Die vorhandenen Verantwortlichen verwenden einen internen Nominierungsprozess, bei dem ein Konsens erreicht werden muss (Schweigen bedeutet Zustimmung), bevor Einladungen ausgegeben werden. Wenn Sie glauben, dass Sie qualifiziert sind und daran interessiert sind, sich aktiver zu beteiligen, wenden Sie sich an einen der aktuellen Verantwortlichen, um die nächsten Schritte zu besprechen.
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten bei diesem Problemtracker nicht gemeldet werden. [Reichen Sie stattdessen ein Problem bei unseren Sicherheitsexperten ein](https://helpx.adobe.com/de/security/alertus.html).
+Sicherheitsprobleme sollten nicht über diese Problemverfolgung gemeldet werden. Stattdessen [ein Problem an Adobe-Sicherheitsexperten gesendet](https://helpx.adobe.com/de/security/alertus.html)

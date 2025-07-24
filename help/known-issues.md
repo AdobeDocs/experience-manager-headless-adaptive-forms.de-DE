@@ -1,12 +1,12 @@
 ---
-title: Bekannte Probleme mit adaptiven Headless-Formularen
-description: Bekannte Probleme mit adaptiven Headless-Formularen
+title: Bekannte Probleme mit Headless Adaptive Forms
+description: Bekannte Probleme mit adaptiven Headless-Formularen.
 keywords: headless, adaptive Formulare, bekannte Probleme
 hide: true
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '118'
+ht-degree: 53%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 * Validierungen auf Panel-Ebene lösen bei Verstößen keinen Fehler aus. (CQ-4342373)
 * Dateivalidierungen lösen bei Verstößen keinen Fehler aus. (CQ-4342372)
 * Benutzerdefinierte Eigenschaften sind nicht dynamisch. (CQ-4342376)
-* Das dynamische Ändern von Dateidaten bei Änderungsereignissen mithilfe von Ausdrücken führt zu einer Endlosschleife. (CQ-4342377)
+* Das dynamische Ändern von Dateidaten bei einem Änderungsereignis mithilfe von Ausdrücken führt zu einer Endlosschleife. (CQ-4342377)
 * Der Dateianhang unterstützt keinen Hilfetext. (CQ-4342370)
-* Das erforderliche Kontrollkästchen zeigt beim Absenden keinen Fehler an, wenn es nicht aktiviert ist. (CQ-4342371)
-* aria-label wird nicht zum Dateianhang hinzugefügt. (CQ-4341494)
+* Das Kontrollkästchen Erforderlich zeigt beim Senden keinen Fehler an, wenn es nicht ausgewählt ist. (CQ-4342371)
+* ARIA-Label wird nicht im Dateianhang hinzugefügt. (CQ-4341494)

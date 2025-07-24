@@ -1,5 +1,5 @@
 ---
-title: Häufig gestellte Fragen
+title: Häufig gestellte Fragen zu Headless Adaptive Forms
 description: Häufig gestellte Fragen
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: headless, adaptives Formular, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '431'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 0%
 
 ## Sollte ich wissen, dass React.js Headless-adaptive Formulare verwendet?
 
-Sie können jedes Framework, jede Bibliothek oder jede Sprache verwenden, um adaptive Headless-Formulare zu rendern, und unsere REST-APIs zum Validieren und Senden der Formulare verwenden. Die AF-Core-Bibliothek ist, sofern OOTB bereitgestellt wird, Framework-unabhängig. Die bereitgestellten OOTB-Bibliotheken React-Render und React-Komponenten verbessern die Benutzerfreundlichkeit. Sie können Ihre eigenen Komponenten entwickeln und sind nicht auf obige beschränkt.
+Sie können jedes Framework, jede Bibliothek und jede Sprache verwenden, um adaptive Headless-Formulare zu rendern und die REST-APIs von Adobe zu verwenden, um die Formulare zu validieren und zu senden. Die AF-Core-Bibliothek, die Ihnen standardmäßig bereitgestellt wird, ist Framework-unabhängig. Die React-Render- und React-Komponentenbibliotheken, die Ihnen vorkonfiguriert bereitgestellt werden, dienen der Vereinfachung. Sie können Ihre eigenen Komponenten erstellen; Sie sind nicht auf die bereitgestellten Komponenten beschränkt.
+
 
 <!-- 
 ## Did Adobe release a new AEM Archetype for Headless adaptive forms?
@@ -38,7 +39,7 @@ Mit der Starter-App können Sie mit der Entwicklung und Gestaltung Ihrer adaptiv
 You can use the starter app to start developing and styling your Headless adaptive forms. Later on, you can use the 
 archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. -->
 
-## Wo kann ich eine Vorschau eines adaptiven Headless-Formulars erhalten? {#storybook-example}
+## Wo erhalte ich eine Vorschau eines adaptiven Headless-Formulars? {#storybook-example}
 
 Mit der Starter-App können Sie ein benutzerdefiniertes adaptives Headless-Formular rendern und in der Vorschau anzeigen. Sie können auch ein Beispiel für ein [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) zur Vorschau eines adaptiven Headless-Formulars bearbeiten.
 
@@ -50,11 +51,11 @@ Adaptive Headless-Formulare basieren auf einer [Standardspezifikation](/help/ass
 
 ## Unterstützen adaptive Headless-Formulare kaskadierende Felder?
 
-In kaskadierenden Feldern hängt der Inhalt des zweiten Felds vom im ersten Feld ausgewählten Inhalt ab. Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) bietet ein Beispiel für kaskadierende Felder.
+In kaskadierenden Feldern hängt der Inhalt des zweiten Felds von dem im ersten Feld ausgewählten Inhalt ab. Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) bietet ein Beispiel für kaskadierende Felder.
 
 ## Ermöglichen adaptive Headless-Formulare das Vorausfüllen von Formularen mit personalisierten Daten?
 
-Adaptive Headless-Formulare ermöglichen das Vorausfüllen von Formularen mit personalisierten Daten. Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) bietet ein Beispiel dafür, wie ein adaptives Headless-Formular vorab ausgefüllt werden kann.
+Headless Adaptive Forms ermöglichen das Vorbefüllen von Formularen mit personalisierten Daten. Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) bietet ein Beispiel dafür, wie ein adaptives Headless-Formular vorab ausgefüllt werden kann.
 
 <!-- >
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?
@@ -63,7 +64,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Kann ich adaptive Headless-Formulare mit Angular SPA verwenden?
 
-Sie können das Web SDK verwenden, um adaptive Headless-Formulare in Angular SPA zu integrieren. Es ist unabhängig von jeglichem Framework. Sie können React SDK als Referenz verwenden.
+Sie können das Web SDK verwenden, um adaptive Headless-Formulare in Angular SPA zu integrieren. Es ist unabhängig von jeglichem Framework. Sie können die React-SDK als Referenz verwenden.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -82,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Gibt es ein Plugin, das die Entwicklung von Headless AF erleichtert?
 
-Ja, für Microsoft Visual Studio Code ist eine Erweiterung verfügbar. Sie bietet eine bequeme Möglichkeit, das JSON für das adaptive Headless-Formular manuell zu erstellen.
+Ja - Mit einer Visual Studio Code-Erweiterung können Sie adaptive Headless-Formulare manuell in JSON erstellen.
 
 ## Kann ein adaptives Headless-Formular eine Verbindung zu jedem CRM herstellen, um Daten zu lesen oder zu schreiben?
 

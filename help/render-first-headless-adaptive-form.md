@@ -1,23 +1,23 @@
 ---
-title: Erstellen des ersten adaptiven Headless-Formulars
-description: Erstellen des ersten adaptiven Headless-Formulars
+title: Erstellen Ihres ersten adaptiven Headless-Formulars
+description: Erstellen Sie Ihr erstes adaptives Headless-Formular.
 keywords: Headless, adaptives Formular
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1492'
+ht-degree: 75%
 
 ---
 
 # Erstellen Ihres ersten adaptiven Headless-Formulars
 
-Sie können Headless-Formulare von Adobe Experience Manager verwenden, um Formularanwendungen mithilfe von Frontend-UI-Frameworks wie React zu erstellen, und das Forms Web SDK für Funktionen wie Statusverwaltung, Validierung und Integrationen mit verschiedenen anderen Touchpoints verwenden.
+Verwenden Sie adaptive Adobe Experience Manager Headless-Formulare, um Formularanwendungen mithilfe der Frontend-Benutzeroberfläche wie React zu erstellen, und verwenden Sie Forms Web SDK für Funktionen wie Statusverwaltung, Validierung und Integrationen mit verschiedenen anderen Touchpoints.
 
 Beispiel: Das Unternehmen We.Org möchte die Journey seiner Kundenanmeldung digitalisieren. Sein Entwicklungs-Team ist mit der Verwendung von Angular zum Erstellen von Frontend-Lösungen sehr vertraut. Das Unternehmen möchte ein benutzerdefiniertes Frontend erstellen, während es die Formularüberprüfung und elektronische Signaturen in spezielle Lösungen auslagert.
 
-Adaptive Headless-Formulare von Adobe Experience Manager bieten Unternehmen die Möglichkeit, Formulare mithilfe ihres vorhandenen Know-hows in Frontend-Sprachen zu erstellen. Gleichzeitig bieten sie Unterstützung für die Verwendung von Backend-Funktionen, um ein Formularerlebnis der Unternehmensklasse zu schaffen.
+Adaptive Adobe Experience Manager Headless-Formulare bieten diesen Unternehmen die Möglichkeit, Formulare mithilfe ihres vorhandenen Fachwissens in Frontend-Sprachen zu erstellen und gleichzeitig die Verwendung von Backend-Funktionen zur Erstellung von Formularen im Unternehmensbereich zu unterstützen.
 
 <!-- >>[!VIDEO](https://video.tv.adobe.com/v/341011/) -->
 
@@ -27,27 +27,27 @@ Adaptive Headless-Formulare von Adobe Experience Manager bieten Unternehmen die 
 
 * Richten Sie die [Entwicklungsumgebung](setup-development-environment.md) ein, damit Sie ein adaptives Headless-Formular auf Ihrem lokalen Computer erstellen und testen können.
 * Die folgende Software muss auf Ihrem lokalen Entwicklungscomputer installiert sein:
-   * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+   * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
    * [Die neueste Version von Git](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Installieren von Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-   * [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie die [Installationsanleitung für Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+   * [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
    * [Maven 3.6 oder höher](https://maven.apache.org/download.cgi). Wenn Sie mit Maven noch nicht vertraut sind, lesen Sie [Installieren von Apache Maven](https://maven.apache.org/install.html).
 
 
 ## Verwenden des Archetyp-Projekts zum Erstellen eines adaptiven Headless-Formulars
 
-Das Archetyp-Projekt ist eine Maven-basierte Vorlage. Es wird ein minimales Projekt basierend auf Best Practices erstellt, um mit adaptiven Headless-Formularen zu beginnen. Es enthält auch Funktionen für adaptive Headless-Formulare für Forms as a Cloud Service und lokale Entwicklungsumgebungen. Es ist erforderlich, das auf dem Archetyp 37 oder höher basierende Projekt während der Betaphase zu erstellen und bereitzustellen. Nach der Betaphase ist das Projekt nur für Anpassungen erforderlich.
+Das Archetyp-Projekt ist eine Maven-basierte Vorlage. Es wird ein minimales Projekt erstellt, das auf Best Practices für die ersten Schritte mit Headless-adaptiven Formularen basiert. Es enthält auch Funktionen für adaptive Headless-Formulare für Forms as a Cloud Service und lokale Entwicklungsumgebungen. Es ist erforderlich, das auf dem Archetyp 37 oder höher basierende Projekt während der Betaphase zu erstellen und bereitzustellen. Nach der Betaphase ist das Projekt nur für Anpassungen erforderlich.
 
 Führen Sie die folgenden Schritte aus, um Ihr erstes adaptives Headless-Formular zu erstellen und zu rendern:
 
-1. [Erstellen und Bereitstellen eines auf einem Archetyp basierenden Projekts von AEM](#create-an-archetype-based-project)
+1. [Erstellen und Bereitstellen eines AEM Archetype-basierten Projekts](#create-an-archetype-based-project)
 1. [Bereitstellen des Projekts für das AEM SDK](#deploy-the-project-to-a-local-development-environment)
-1. [Erstellen des JSON-Schemas des adaptiven Headless-Formulars und Hochladen in Ihre AEM SDK-Instanz](#create-add-json-representation-of-headless-adaptive-forms)
+1. [Erstellen Sie ein JSON-Schema des adaptiven Headless-Formulars und laden Sie es in Ihre AEM SDK-Instanz hoch](#create-add-json-representation-of-headless-adaptive-forms)
 1. [Erstellen eines adaptiven Formulars basierend auf der Vorlage „Leer mit Kernkomponenten“](#create-adaptive-form-with-blank-with-core-components-template)
 
 
-### 1. Erstellen und Bereitstellen eines auf einem Archetyp basierenden Projekts von AEM {#create-an-archetype-based-project}
+### &#x200B;1. Erstellen und Bereitstellen eines auf einem Archetyp basierenden Projekts von AEM {#create-an-archetype-based-project}
 
-Führen Sie je nach Betriebssystem den folgenden Befehl aus, um ein Experience Manager Forms as a Cloud Service-Projekt zu erstellen. Verwenden Sie den Archetyp Version 37 oder höher. Siehe [Archetyp-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), um die neueste Version des Archetyps zu finden.
+Führen Sie je nach Betriebssystem den folgenden Befehl aus, um ein Experience Manager Forms as a Cloud Service-Projekt zu erstellen. Verwenden Sie den Archetyp Version 37 oder höher. Informationen zur neuesten Version des Archetyps finden Sie in der [Archetyp-Dokumentation](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 **Microsoft Windows**
 
@@ -71,13 +71,13 @@ Führen Sie je nach Betriebssystem den folgenden Befehl aus, um ein Experience M
    * Passen Sie `groupId` an, um die Maven-Gruppen-ID (groupId) und das Java-Quellpaket festzulegen.
    * Verwenden Sie die Option `includeFormsenrollment=y` zum Einschließen von Forms-spezifischen Konfigurationen, Designs, Vorlagen, Kernkomponenten und Abhängigkeiten, die zum Erstellen adaptiver Formulare erforderlich sind.
    * Durch Verwenden der Option `includeFormsheadless=y` werden Formular-Kernkomponenten und -Abhängigkeiten einbezogen, die für die Verwendung der Funktion für adaptive Headless-Formulare erforderlich sind. Wenn Sie diese Option aktivieren, sind folgende Punkte enthalten:
-      * Die Vorlage **Leer mit Kernkomponenten** mit [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
-      * Ein Frontend-React-Modul, `ui.frontend.react.forms.af`. Es hilft Ihnen, das adaptive Headless-Formular in einer React-App zu rendern.
+      * Die Vorlage **Leer mit Kernkomponenten** mit [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction).
+      * Ein Frontend-React-Modul, `ui.frontend.react.forms.af`. Dies hilft Ihnen beim Rendern eines adaptiven Headless-Formulars in einer React-App.
 
 
-**Apple macOS oder Linux**:
+**Apple macOS oder ®**:
 
-1. Öffnen Sie das Terminal als Root-Benutzerin bzw. -Benutzer. So können Sie Befehle mit Administratorrechten ausführen. Sie können nach dem Öffnen des Terminalfensters, um Befehle mit Administratorrechten auszuführen, auch den Befehl `sudo root` verwenden.
+1. Öffnen Sie das Terminal als Root-Benutzer. So können Sie Befehle mit Administratorrechten ausführen. Sie können nach dem Öffnen des Terminalfensters, um Befehle mit Administratorrechten auszuführen, auch den Befehl `sudo root` verwenden.
 1. Führen Sie den folgenden Befehl aus:
 
    ```shell
@@ -97,19 +97,19 @@ Führen Sie je nach Betriebssystem den folgenden Befehl aus, um ein Experience M
    * Passen Sie `groupId` an, um die Maven-Gruppen-ID (groupId) und das Java-Quellpaket festzulegen.
    * Verwenden Sie die Option `includeFormsenrollment=y` zum Einschließen von Forms-spezifischen Konfigurationen, Designs, Vorlagen, Kernkomponenten und Abhängigkeiten, die zum Erstellen adaptiver Formulare erforderlich sind.
    * Durch Verwenden der Option `includeFormsheadless=y` werden Formular-Kernkomponenten und -Abhängigkeiten einbezogen, die für die Verwendung der Funktion für adaptive Headless-Formulare erforderlich sind. Wenn Sie diese Option aktivieren, sind folgende Punkte enthalten:
-      * Die Vorlage **Leer mit Kernkomponenten** mit [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
-      * Ein Frontend-React-Modul, `ui.frontend.react.forms.af`. Es hilft Ihnen, das adaptive Headless-Formular in einer React-App zu rendern.
+      * Die Vorlage **Leer mit Kernkomponenten** mit [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction).
+      * Ein Frontend-React-Modul, `ui.frontend.react.forms.af`. Dies hilft Ihnen beim Rendern eines adaptiven Headless-Formulars in einer React-App.
 
 Nach erfolgreichem Abschluss des Befehls wird ein Projektordner mit dem im `appID` angegebenen Namen erstellt. Wenn Sie beispielsweise `appID` mit dem Wert `myheadlessform` verwenden, wird ein Ordner mit dem Namen `myheadlessform` erstellt. Er enthält das auf dem Archetyp basierende Projekt.
 
 
-### 2. Bereitstellen des Projekts für das AEM SDK {#deploy-the-project-to-a-local-development-environment}
+### &#x200B;2. Bereitstellen des Projekts für das AEM SDK {#deploy-the-project-to-a-local-development-environment}
 
 Wenn Sie das Projekt in Ihrer AEM SDK-Instanz bereitstellen, werden die Funktion für adaptive Headless-Formulare, die Vorlage **Leer mit Kernkomponenten** und andere Ressourcen, die im Projekt enthalten sind, zu Ihrer Entwicklungsumgebung hinzugefügt. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> So stellen Sie Ihre AEM SDK-Instanz bereit:
 
-1. Öffnen Sie eine Eingabeaufforderung. Wenn Sie mit Windows arbeiten, öffnen Sie die Eingabeaufforderung mit Administratorrechten (Eingabeaufforderung oder [Git-Bash-Shell](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) als Admin ausführen).
+1. Öffnen Sie die Eingabeaufforderung. Wenn Sie mit Windows arbeiten, öffnen Sie die Eingabeaufforderung mit Administratorrechten (Eingabeaufforderung oder [Git-Bash-Shell](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) als Admin ausführen).
 
-1. Navigieren Sie zum Projektverzeichnis, das im vorherigen Schritt erstellt wurde. Zum Beispiel: `/myheadlessform`
+1. Navigieren Sie zu dem im vorherigen Schritt erstellten Projektverzeichnis. Zum Beispiel: `/myheadlessform`
 
    ![Projektverzeichnis](assets/project-directory.png)
 
@@ -122,15 +122,15 @@ Wenn Sie das Projekt in Ihrer AEM SDK-Instanz bereitstellen, werden die Funktion
    Warten Sie auf die Meldung „BUILD SUCCESS“.
    ![Projekt erfolgreich bereitgestellt](assets/project-deployed-successfully.png)
 
-   Es kann lange dauern, die Dateiabhängigkeiten zu beheben und das Projekt bereitzustellen. Wenn die Bereitstellung des Projekts fehlschlägt, lesen Sie den Artikel zur [Fehlerbehebung](troubleshooting.md). Dort finden Sie häufige Probleme und deren Lösung.
+   Es kann lange dauern, die Dateiabhängigkeiten zu beheben und das Projekt bereitzustellen. Wenn bei der Bereitstellung des Projekts ein Fehler auftritt, finden Sie im Artikel [Fehlerbehebung](troubleshooting.md) Informationen zu häufigen Problemen und deren Behebung.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=de#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
-### 3. Erstellen des JSON-Schemas des adaptiven Headless-Formulars und Hochladen in Ihre AEM SDK-Instanz {#create-add-json-representation-of-headless-adaptive-forms}
+### &#x200B;3. Erstellen des JSON-Schemas des adaptiven Headless-Formulars und Hochladen in Ihre AEM SDK-Instanz {#create-add-json-representation-of-headless-adaptive-forms}
 
-Ein adaptives Headless-Formular wird als JSON-Datei dargestellt. Sie können ein Beispielformular aus [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) abrufen oder die Beispielformulare aus dem Archetyp-Projekt unter `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json` verwenden. Dieses Dokument verwendet das Formular [Einführung](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) aus dem Storybook. Es ist ein Formular mit einem einzelnen Feld, mit dem Sie schnell mit adaptiven Headless-Formularen beginnen können. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Ein adaptives Headless-Formular wird als JSON-Datei dargestellt. Sie können ein Beispielformular aus [Storybook) abrufen ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) das Beispielformular verwenden, das in den Projektarchetyp unter `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json` eingeschlossen ist. Dieses Dokument verwendet das Formular [Einführung](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) aus dem Storybook. Es ist ein Formular mit einem einzelnen Feld, mit dem Sie schnell mit adaptiven Headless-Formularen beginnen können. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 So erstellen Sie das Schema und laden es hoch:
 
@@ -162,7 +162,7 @@ So erstellen Sie das Schema und laden es hoch:
 
 1. Melden Sie sich bei Ihrer [lokalen AEM SDK-Instanz](setup-development-environment.md#setup-author-instance) an
 1. Gehen Sie zu „Adobe Experience Manager“ > „Forms“ > „Formulare und Dokumente“. Tippen Sie auf „Erstellen“ > „Datei hochladen“.
-1. Wählen Sie die in Schritt 2 erstellte `.json` aus und laden Sie sie hoch. Jetzt können Sie das adaptive Headless-Formular erstellen. Wenn Sie die JSON-Datei in Ihrem AEM Archetyp-basierten Projekt unter `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json` speichern, können Sie `mvn -PautoInstallPackage clean install` verwenden, um das Projekt mitsamt `<formname>.json` in Ihrem AEM SDK bereitzustellen.
+1. Wählen Sie die in Schritt 2 erstellte `.json` aus und laden Sie sie hoch. Sie können jetzt das adaptive Headless-Formular erstellen. Wenn Sie die JSON-Datei in Ihrem AEM Archetyp-basierten Projekt unter `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json` speichern, können Sie `mvn -PautoInstallPackage clean install` verwenden, um das Projekt mitsamt `<formname>.json` in Ihrem AEM SDK bereitzustellen.
 
 Wenn beim Hochladen der `.json` ein Fehler auftritt, stellen Sie sicher, dass das [AEM-Archetyp-Projekt erfolgreich bereitgestellt wurde](#deploy-the-project-to-a-local-development-environment).
 
@@ -180,11 +180,11 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
     
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=de#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
-### 4. Erstellen eines adaptiven Formulars basierend auf der Vorlage „Leer mit Kernkomponenten“ {#create-adaptive-form-with-blank-with-core-components-template}
+### &#x200B;4. Erstellen eines adaptiven Formulars basierend auf der Vorlage „Leer mit Kernkomponenten“ {#create-adaptive-form-with-blank-with-core-components-template}
 
 1. Melden Sie sich bei Ihrer [AEM SDK-Instanz](http://localhost:4502/) an.
 
@@ -203,19 +203,19 @@ If you are on Windows, run the above with Administrative privileges (Run command
 
 Wenn die Vorlage **Leer mit Kernkomponenten** nicht angezeigt wird, stellen Sie sicher, dass das [AEM-Archetyp-Projekt erfolgreich bereitgestellt wurde](#deploy-the-project-to-a-local-development-environment).
 
-### 5. Konfigurieren des adaptiven Formulars für die Verwendung des JSON-Schemas {#configure-adaptive-form-to-use-the-JSON-representation}
+### &#x200B;5. Konfigurieren des adaptiven Formulars für die Verwendung des JSON-Schemas {#configure-adaptive-form-to-use-the-JSON-representation}
 
 Das im vorherigen Schritt erstellte adaptive Formular ist leer. Konfigurieren Sie das adaptive Formular für die Verwendung des JSON-Schemas:
 
 1. Melden Sie sich bei Ihrer [AEM SDK-Instanz](http://localhost:4502/) an.
 
-1. Gehen Sie zu „Adobe Experience Manager“ > „Forms“ > „Formulare und Dokumente“. Wählen Sie das im vorherigen Schritt erstellte adaptive Formular aus und tippen Sie auf „Bearbeiten“. Das adaptive Formular wird im Editor geöffnet.
+1. Gehen Sie zu „Adobe Experience Manager“ > „Forms“ > „Formulare und Dokumente“. Wählen Sie das im vorherigen Schritt erstellte adaptive Formular aus und tippen Sie auf Bearbeiten . Das adaptive Formular wird im Editor geöffnet.
 
 1. Tippen Sie auf die Komponente „Adaptive Formulare – Container“ und dann auf „Eigenschaften“. Der Eigenschaften-Explorer wird in der Seitenleiste angezeigt.
 
-1. Erweitern Sie im Eigenschaften-Explorer das Akkordeon EINFACH und geben Sie den Pfad des in einem vorherigen Schritt hochgeladenen JSON-Schemas als Pfad zum Formular-Laufzeitdokument an. Die Container-Komponente zeigt eine Ausgabedarstellung des Formulars an.
+1. Erweitern Sie im Eigenschaften-Explorer das Akkordeon STANDARD und geben Sie den Pfad des JSON-Schemas an, das in einem vorherigen Schritt für die Option Forms Runtime Document Path hochgeladen wurde. Die Container-Komponente zeigt eine Ausgabedarstellung des Formulars an.
 
-1. Erweitern Sie im Eigenschaften-Explorer das Akkordeon ÜBERMITTLUNG und legen Sie eine Übermittlungsaktion für das adaptive Formular fest. Ihr Formular kann jetzt in einer React-App verwendet werden.
+1. Erweitern Sie im Eigenschaften-Explorer das Akkordeon Übermittlung und legen Sie eine Übermittlungsaktion für das adaptive Formular fest. Ihr Formular kann jetzt in einer React-App verwendet werden.
 
 1. So rendern Sie das Formular auf Ihrem lokalen Entwicklungs-Computer:
 
@@ -225,7 +225,7 @@ Das im vorherigen Schritt erstellte adaptive Formular ist leer. Konfigurieren Si
 
       `npm run start`
 
-   1. Öffnen Sie nach Abschluss „localhost:3000“ in Ihrem Browser-Fenster, um das gerenderte adaptive Headless-Formular anzuzeigen.
+   1. Öffnen Sie nach Abschluss des Vorgangs :3000 localhost in Ihrem Browser-Fenster, um ein gerendertes adaptives Headless-Formular anzuzeigen.
    1. Um die Übermittlungsfunktion zu testen, melden Sie sich bei Ihrem AEM Forms-Server an und verwenden Sie die Option **HTML-Vorschau** des Formulars, um das Formular im Vorschaumodus zu öffnen.
 
-Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) bietet eine Liste von Komponenten und Regeln, die für verschiedene adaptive Headless-Formulare festgelegt werden können, sowie ein Beispiel für ein JSON-Schema von adaptiven Headless-Formularen. Sie können auch das Dokument [Spezifikationen](/help/assets/Headless-Adaptive-Form-Specification.pdf) lesen, um mehr über verschiedene Regeln und Eigenschaften im Zusammenhang mit adaptiven Headless-Formularen zu erfahren.
+Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) enthält eine Liste der Komponenten und Regeln, die für verschiedene adaptive Headless-Forms festgelegt werden können, sowie einige Beispiele für das JSON-Schema von Headless Adaptive Forms. Sie können auch das Dokument [Spezifikationen](/help/assets/Headless-Adaptive-Form-Specification.pdf) lesen, um mehr über verschiedene Regeln und Eigenschaften in Bezug auf Headless Adaptive Forms zu erfahren.

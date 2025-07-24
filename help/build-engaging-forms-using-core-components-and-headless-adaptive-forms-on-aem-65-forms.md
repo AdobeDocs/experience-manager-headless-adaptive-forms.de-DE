@@ -1,8 +1,6 @@
 ---
 title: Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless
-seo-title: Build Engaging Forms Using Core Components and Headless
-description: Erstellen ansprechender Formulare mithilfe von Kernkomponenten und Headless
-seo-description: Build Engaging Forms Using Core Components and Headless
+description: Erstellen Sie ansprechende Forms mit Kernkomponenten und Headless.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -11,20 +9,20 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2134'
+ht-degree: 67%
 
 ---
 
 # Erstellen von ansprechenden Formularen mit Kernkomponenten und adaptiven Headless-Formularen in AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article and many others in this entire repo are completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you take the time to add the required missing image ALT tags.  -->
+
 ## Labor-Übersicht {#lab-overview}
 
-In diesem praktischen Labor lernen Sie:
-
-So können Sie AEM Forms nutzen, um auf Grundlage der neuesten Kernkomponenten einfach adaptive Formulare zu erstellen, die mit AEM Sites kompatibel sind, und über mehrere Kanäle Daten erfassen, indem Sie adaptive Formulare als Headless-Formulare über Web, Mobile und Chat bereitstellen. Außerdem lernen Sie Best Practices rund um die Formatierung, Anpassungen und Frontend-Entwicklung kennen.
+In diesem praxisorientierten Labor erfahren Sie, wie Sie AEM Forms mit den neuesten - mit AEM Sites abgestimmten - Kernkomponenten verwenden können, um schnell adaptive Formulare zu erstellen. Stellen Sie diese Formulare als Headless-Erlebnisse für Web-, Mobile- und Chat-Kanäle bereit, um Omni-Channel-Daten zu erfassen. Außerdem lernen Sie Best Practices rund um die Formatierung, Anpassungen und Frontend-Entwicklung kennen.
 
 ## Haupterkenntnisse {#key-takeaways}
 
@@ -36,15 +34,15 @@ So können Sie AEM Forms nutzen, um auf Grundlage der neuesten Kernkomponenten e
 
 ## Bevor Sie beginnen {#pre-requisites}
 
-Um dieses praktische Labor zu nutzen:
+So verwenden Sie dieses praktische Labor:
 
 * Installieren Sie die [neueste Git-Version](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). Wenn Sie mit Node.js noch nicht vertraut sind, lesen Sie [Installationsanleitung für Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* [Aktivieren Sie adaptive Headless-Formulare](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
+* Forms [Aktivieren von Headless Adaptive ](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
 
-* Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. Die Beispiele im Dokument verwenden Microsoft Visual Studio Code.
+* Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. In den Beispielen in diesem Dokument wird Microsoft Visual Studio Code verwendet.
 
 ## Lektion 1 {#lesson-1}
 
@@ -81,36 +79,31 @@ Erfahren Sie, wie Sie anhand der neuesten Kernkomponenten ein adaptives Formular
 
 ### Lektionskontext
 
-In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adaptives Formular für mehrere Kanäle wie Web, Mobile oder Chat, indem Sie adaptive Formulare mit standardisierten gebrauchsfertigen Kernkomponenten für die Datenerfassung erstellen.
+Als Business-Anwenderin bzw. -Anwender werden Sie den Editor für adaptive Forms und dessen vordefinierte Kernkomponenten zum Erstellen eines adaptiven Formulars verwenden. Sie können das Formular dann an Web-, Mobil- und Chat-Kanäle senden, um Daten zu erfassen.
 
 ### Übung
 
 1. Erstellen Sie einen Übermittlungsendpunkt für das Formular:
 
-   1. Öffnen Sie <https://requestbin.com/> in einer neuen Browser-Registerkarte.
-
+   1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
-
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Dieser bestimmte Endpunkt dient als Beispiel für das Senden und Anzeigen von Daten. In der eigentlichen Produktion verwenden Sie eigene Endpunkte oder Datenquellen, um die erfassten Daten zu speichern.
 
 1. Erstellen eines adaptiven Formulars:
 
-   1. Navigieren Sie in der Browser-Registerkarte, die Sie in Lektion 1 verwendet haben, zur Web-Schnittstelle von AEM Forms und dann zu **Formulare** > **Formulare und Dokumente**.
+   1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur AEM Forms-Web-Benutzeroberfläche und dann zu **Forms** > **Forms und Dokumente**.
 
    1. Klicken Sie auf **Erstellen** und wählen Sie „Adaptives Formular“.
-
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Wählen Sie die Vorlage **Leer mit Kernkomponenten** auf dem Vorlagenauswahlbildschirm, wie unten gezeigt, und klicken Sie auf **Weiter**.
-
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Geben Sie `Contact us` als **Titel** des Formulars ein. Stellen Sie sicher, dass der **Name** des Formulars `contact-us` lautet.
-
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Erstellen**. Es öffnet sich ein Dialogfeld.
@@ -126,15 +119,19 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Öffnen Sie den Inhalts-Browser, klicken Sie auf das Eigenschaftensymbol „Guide-Container“ und öffnen Sie die Registerkarte **Übermittlung**. Wählen Sie die Übermittlungsaktion **An REST-Endpunkt übermitteln**, dann die Option **POST-Anfrage aktivieren**, geben Sie den in Lektion 2 erstellten REST-Endpunkt in das Textfeld **URL für POST-Anfrage** ein und klicken Sie auf das Symbol **Fertig**.
+   1. Öffnen Sie den Inhalts-Browser, klicken Sie auf das Symbol Eigenschaften des Guide-Containers und öffnen Sie die Registerkarte **Übermittlung**.
+
+   1. Wählen Sie die **An REST-Endpunkt übermitteln** Übermittlungsaktion
+
+   1. Wählen Sie die Option **POST-Anfrage aktivieren** und geben Sie den in Lektion 2 erstellten REST-Endpunkt in das Textfeld **URL für POST-Anfrage** ein. Klicken Sie dann auf das Symbol **Fertig**.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
 1. So veröffentlichen Sie ein adaptives Formular:
 
-   1. Öffnen Sie die AEM-Benutzeroberfläche und navigieren Sie zu **Formulare** > **Formulare und Dokumente**. Wählen Sie das zuvor erstellte Formular aus und klicken Sie auf **Veröffentlichen**.
+   1. Öffnen Sie die AEM-Benutzeroberfläche und navigieren Sie zu **Formulare** > **Formulare und Dokumente**. Wählen Sie das im vorherigen Schritt erstellte Formular aus und klicken Sie auf **`Publish`**.
 
-   1. Klicken Sie im Dialogfeld „Assets veröffentlichen“ auf **Veröffentlichen**. Die Erfolgsmeldung wird angezeigt.
+   1. Klicken Sie **Dialogfeld &quot;Assets**&quot; auf **Veröffentlichen**. Die Erfolgsmeldung wird angezeigt.
 
 ## Lektion 3
 
@@ -191,7 +188,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
 1. Legen Sie die folgenden Werte für die Variablen in der .env-Datei fest und speichern Sie die Datei:
 
-   * **AEM_URL**: Geben Sie die URL einer **Publishing**-Instanz an. Zum Beispiel: `https://localhost:4502/`
+   * **AEM_URL**: Geben Sie die URL einer **Publish**-Instanz an. Zum Beispiel: `https://localhost:4502/`
 
    * **AEM_ADAPTIVE_FORM**: Geben Sie den Namen des Formulars an. Zum Beispiel: `contact-us`.
 
@@ -210,8 +207,8 @@ Richten Sie ein lokales Repository des Designs ein:
 
    >[!NOTE]
    >
-   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, npm über den Befehl `npm notice Run npm nstall -g npm@9.6.0`zu aktualisieren, ignorieren Sie die Meldung.
-   > * Führen Sie keine anderen npm-Befehle aus, es sei denn, Sie werden dazu in der Arbeitsmappe angewiesen.
+   > * Wenn Sie eine Meldung erhalten, in der Sie aufgefordert werden, `npm` über den Befehl `npm notice Run npm nstall -g npm@9.6.0`zu aktualisieren, ignorieren Sie die Meldung.
+   > * Führen Sie keine anderen `npm`-Befehle aus, es sei denn, Sie sind in der Arbeitsmappe dazu aufgefordert.
 
 1. Führen Sie nun den folgenden Befehl aus, um eine Vorschau des Formulars anzuzeigen.
 
@@ -225,7 +222,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    >[!NOTE]
    >
-   >Wenn nach der Ausführung des Befehls `npm run live` für mehr als 3–4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und betätigen Sie die **Eingabetaste**.
+   >Wenn nach der Ausführung des `npm run live`-Befehls für mehr als 3-4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und drücken **Eingabetaste**.
 
 
    ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
@@ -241,26 +238,26 @@ Richten Sie ein lokales Repository des Designs ein:
 
 1. Legen Sie die Farbe für **$error** auf **#5736eb** fest und speichern Sie die Datei.
 
-1. Aktualisieren Sie den Browser und übermitteln Sie das Formular. Sie sehen, dass sich die Fehlerfarbe im Vorname-Feld entsprechend geändert hat.
+1. Aktualisieren Sie den Browser und übermitteln Sie das Formular. Beachten Sie, dass sich die Fehlerfarbe im Vornamenfeld entsprechend geändert hat.
 
    ![](/help/assets/error-color-after.png)
 
-1. Drücken Sie in der Eingabeaufforderung **Strg+C**, geben Sie **Y** ein und drücken Sie die **Eingabetaste** zum Beenden des npm-Prozesses. Es ist wichtig, den npm-Server anzuhalten, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
+1. Drücken Sie in der Eingabeaufforderung **STRG+C**, geben Sie **Y** ein und drücken Sie die **EINGABETASTE**, um den npm-Prozess zu beenden. Es ist wichtig, den npm-Server zu stoppen, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
 1. Schließen Sie Visual Studio Code und das Eingabeaufforderungsfenster.
 
 ## Lektion 4
 
 ### Ziel
 
-Rendern Sie das Formular auf Web-/Mobile- und anderen Benutzeroberflächen als Headless-Formular.
+Rendern Sie das Formular auf Web-/Mobile- und anderen Schnittstellen als Headless-Formular.
 
 ### Lektionskontext
 
-In dieser Lektion erfahren Sie als Frontend-Entwicklungsperson, wie Sie das zuvor erstellte adaptive Formular mithilfe des React-Spectrum-Design-Frameworks als Headless-Formular rendern können.
+In dieser Lektion erfahren Sie als Frontend-Entwicklungsperson, wie Sie das zuvor erstellte adaptive Formular mithilfe eines React-Spektrum-Design-Frameworks als Headless-Formular rendern können.
 
 ### Übung
 
-Richten Sie ein lokales Repository mithilfe des React-Starter-Projekts ein:
+Einrichten eines lokalen Repositorys mit dem React-Starter-Projekt:
 
 1. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
 
@@ -297,7 +294,7 @@ Richten Sie ein lokales Repository mithilfe des React-Starter-Projekts ein:
 
 So rendern Sie das in Ihrer Publishing-Umgebung gehostete Formular:
 
-1. Benennen Sie die Datei „env_template“ in eine Datei „.env“ um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
+1. Benennen Sie die Datei env_template in eine Datei .env um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
 
    ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
 
@@ -335,24 +332,24 @@ So rendern Sie das in Ihrer Publishing-Umgebung gehostete Formular:
    >[!NOTE]
    >
    > 
-   > Wenn nach der Ausführung des Befehls `npm start` für mehr als 3–4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und drücken Sie die **Eingabetaste**.
+   > Wenn nach der Ausführung des `npm start`-Befehls für mehr als 3-4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und drücken **Eingabetaste**.
 
    ![](/help/assets/headless-adaptive-form-lab.png)
 
 Jetzt nehmen wir als Business-Anwenderin bzw. -Anwender Änderungen am Formular auf dem Server vor und zeigen die Änderungen automatisch im Headless-Formular an.
 
-1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser. Zum Beispiel [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser. Beispiel: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
 1. Öffnen Sie das Formular **Kontakt** und klicken Sie auf **Bearbeiten.** Das Formular wird im Editor für adaptive Formulare geöffnet.
 
 
-1. Öffnen Sie das Feld **Telefonnummer** und klicken Sie auf das **Bearbeitungssymbol (Bleistiftsymbol)** in der Symbolleiste. Wenn Sie die Popup-Symbolleiste nicht sehen können, wechseln Sie in den Bearbeitungsmodus, indem Sie auf die Schaltfläche **Bearbeiten** oben rechts, links von der Schaltfläche **Vorschau**, klicken.
+1. Öffnen Sie das Feld **Telefonnummer** und klicken Sie auf das **Bearbeitungssymbol (Bleistiftsymbol)** in der Symbolleiste. Wenn Sie die Popup-Symbolleiste nicht sehen können, wechseln Sie in den Bearbeitungsmodus. Klicken Sie **oben rechts** der Schaltfläche **Vorschau** auf „Bearbeiten“.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
 1. Ändern Sie die Beschriftung in **Mobiltelefonnummer**. Klicken Sie auf eine leere Stelle im Formular, damit die am Formular vorgenommenen Änderungen gespeichert werden.
 
-Veröffentlichen wir das aktualisierte Formular, um die Änderungen in die Publishing-Umgebung zu übertragen.
+Veröffentlichen wir das aktualisierte Formular, um die Änderungen in die veröffentlichte Umgebung zu übertragen.
 
 1. Öffnen Sie in der Registerkarte der Verwaltungsschnittstelle von AEM Forms das Kontaktformular und klicken Sie auf **Veröffentlichung aufheben**. Wenn Sie die Schaltfläche **Veröffentlichung rückgängig machen** nicht sehen, fahren Sie mit Schritt 3 fort, um die Änderungen direkt zu veröffentlichen.
 
@@ -369,7 +366,7 @@ Veröffentlichen wir das aktualisierte Formular, um die Änderungen in die Publi
    ![](/help/assets/headless-adaptive-form.png)
 
 1. Öffnen Sie das Eingabeaufforderungsfenster, das zum Starten des Projekts **react-starter-kit-aem-headless-forms** genutzt wird, drücken Sie **Strg+C**,
-geben Sie **Y** ein und drücken Sie die Eingabetaste, um den npm-Prozess zu beenden. Es ist wichtig, den npm-Server anzuhalten, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
+geben Sie **Y** ein und drücken Sie die Eingabetaste, um den npm-Prozess zu beenden. Es ist wichtig, den npm-Server zu stoppen, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
 
 1. Schließen Sie Visual Studio Code und das Eingabeaufforderungsfenster.
 
@@ -386,7 +383,7 @@ In dieser Lektion erfahren Sie als Frontend-Entwicklungsperson, wie Sie das zuvo
 
 ### Übung
 
-Richten Sie das lokale Repository mithilfe des Ausgangsprojekts der Material-Benutzeroberfläche ein:
+Richten Sie mithilfe des Ausgangsprojekts der Material-Benutzeroberfläche ein lokales Repository ein:
 
 1. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
 
@@ -398,7 +395,7 @@ Richten Sie das lokale Repository mithilfe des Ausgangsprojekts der Material-Ben
    cd git
    ```
 
-1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um einen Ordner mit dem Namen „mui“ zu erstellen und zu diesem Ordner zu navigieren:
+1. Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um einen Ordner mit dem Namen `mui` zu erstellen, und navigieren Sie mithilfe der folgenden Befehle zum Ordner `mui` :
 
    ```Shell
    mkdir mui
@@ -426,13 +423,13 @@ Richten Sie das lokale Repository mithilfe des Ausgangsprojekts der Material-Ben
 
 So rendern Sie das in Ihrer Publishing-Umgebung gehostete Formular:
 
-1. Benennen Sie die Datei **env_template** in eine Datei **.env** um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie **Umbenennen**.
+1. Benennen Sie die Datei **env_template** in die Datei **.** um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie **Umbenennen**.
 
    ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
 
 1. Legen Sie die folgenden Werte für die Variablen in der .env-Datei fest. Speichern Sie die Datei nach dem Aktualisieren der Variablen. Verwenden Sie die Tastenkombination **Strg+S**, um die Datei zu speichern.
 
-   * **AEM_URL**: Geben Sie die URL der Publishing-Umgebung an. Zum Beispiel [https://localhost:4503](https://localhost:4503)
+   * **AEM_URL**: Geben Sie die URL der Publishing-Umgebung an. Beispiel: [https://localhost:4503](https://localhost:4503)
 
    * **AEM_FORM_PATH**: Geben Sie den Pfad des in der vorherigen Lektion erstellten adaptiven Formulars an. Zum Beispiel /content/forms/af/contact-us/
 
@@ -457,7 +454,7 @@ So rendern Sie das in Ihrer Publishing-Umgebung gehostete Formular:
 
    >[!NOTE]
    >
-   >Wenn nach der Ausführung des Befehls `npm start` für mehr als 3–4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL in 127.0.0.1 und drücken Sie die **Eingabetaste**.
+   >Wenn nach der Ausführung des `npm start`-Befehls für mehr als 3-4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und drücken **Eingabetaste**.
 
    ![](/help/assets/google-mui-form.png)
 
@@ -469,7 +466,7 @@ Erstellen Sie ein alternatives Look-and-Feel des Headless-Formulars mithilfe der
 
 ### Lektionskontext
 
-In dieser Lektion erfahren Sie als Frontend-Entwicklungsperson, wie Sie mithilfe der Material-Benutzeroberfläche eine alternative Darstellung verschiedener Komponenten für ein adaptives Formular erstellen, das zuvor von einer Business-Anwenderin oder einem Business-Anwender erstellt wurde.
+Als Frontend-Entwickler erfahren Sie in dieser Lektion, wie Sie alternative Versionen der Material-Benutzeroberfläche von verschiedenen Komponenten erstellen. Sie werden sie auch auf das adaptive Formular anwenden, das der Business-Anwender zuvor erstellt hat.
 
 ### Übung
 
@@ -491,18 +488,18 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
 
    ![](/help/assets/aem65-lab-code-update.png)
 
-   Es ist wichtig, die richtige Groß-/Kleinschreibung für die Variante „OutlinedInput“ zu verwenden, da die Kompilierung andernfalls fehlschlagen würde. Die Kompilierung der lokalen Entwicklungsumgebung beginnt automatisch in der Eingabeaufforderung. Warten Sie, bis die folgende Meldung angezeigt wird
+   Es ist wichtig, die korrekte Groß-/Kleinschreibung für die Variante „OutinedInput“ zu verwenden, da sonst die Kompilierung fehlschlagen würde. Die Kompilierung der lokalen Entwicklungsumgebung beginnt automatisch in der Eingabeaufforderung. Warten Sie, bis die folgende Meldung angezeigt wird
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
    `setting new origin header`
 
-1. Aktualisieren Sie den Browser, wenn er nicht automatisch aktualisiert wird, um zu sehen, wie die Texteingabe-Komponente eine andere Variante verwendet.
+1. Aktualisieren Sie den Browser, wenn er nicht automatisch aktualisiert wird, um zu sehen, wie die Texteingabekomponente eine andere Variante verwendet.
 
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Diese Änderung erfolgt für Endbenutzerinnen und -benutzer ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für den betreffenden Headless-Kanal. Beispiel: Web-Kanal in diesem Labor.
+   Diese Änderung erfolgt für Endbenutzerinnen und -benutzer ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für den betreffenden Headless-Kanal. Beispiel: ein Web-Kanal in diesem Labor.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -528,16 +525,16 @@ Nein, Headless-Formulare verwenden dieselbe Metrik für den Lizenzwert, nämlich
 
 ## Nächste Schritte
 
-Nachdem Sie nun gelernt haben, wie Sie adaptive Formulare erstellen und über Headless-Formulare an mehrere Kanäle senden, sollten Sie versuchen, Ihre neuen Fähigkeiten in die Tat umzusetzen. Viel Spaß beim Erstellen und Bereitstellen von umfangreichen, außergewöhnlichen Datenerfassungserlebnissen für Ihre Endbenutzerinnen und -benutzer, wo auch immer sie sich befinden!
+Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Headless-Formularen bereitstellen können. Nutzen Sie diese Fähigkeiten, um skalierbare, hochwertige Datenerfassungsprozesse zu erstellen, wo auch immer sich Ihre Benutzer befinden.
 
 ## Ressourcen
 
-* [Einführung in die Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de)
+* [Einführung in die Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=de)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Aktualisieren der Stile für auf Kernkomponenten basierende adaptiven Formulare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=de)
+* [Aktualisieren der Stile für auf Kernkomponenten basierende adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Adaptive Headless-Formulare](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de)
+* [Adaptive Headless-Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Verwenden des Headless-React-Starter-Kits](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=de)
+* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

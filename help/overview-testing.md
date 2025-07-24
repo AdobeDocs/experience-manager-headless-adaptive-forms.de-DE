@@ -1,6 +1,6 @@
 ---
 title: Adaptive Headless-Formulare von AEM – Übersicht
-description: Adaptive Headless-Formulare von AEM bieten eine schnelle und effiziente Möglichkeit zum Erstellen von Formularen für verschiedene Plattformen, einschließlich Headless- oder Headful-CMS, React-Anwendungen, Einzelseitenanwendungen (SPA), Web Apps, Mobile Apps, Amazon Alexa, Google Assistant, WhatsApp und mehr. Mit adaptiven Headless-Formularen können Sie den Prozess zum Erstellen von Formularen optimieren und so die Erfassung von Benutzerdaten auf verschiedenen Geräten und Plattformen zu vereinfachen.
+description: Einmalige Erstellung von Formularen und Bereitstellung für CMS, React, SPAs, Web, Mobile, Alexa, WhatsApp und mehr mit AEM Headless Adaptive Forms für eine schnelle, skalierbare Datenerfassung.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -10,25 +10,25 @@ keywords: Headless-CMS, adaptive Formulare, Headless-Benutzeroberfläche, Headfu
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 1f70e2bb0e5f12e8ee5d948ef1d3cd2935f2274f
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 98%
+source-wordcount: '328'
+ht-degree: 57%
 
 ---
 
 # Einführung
 
-Die adaptiven Headless-Formulare von Adobe Experience Manager (AEM) bilden eine Lösung zum Erstellen und Verwalten von Headless-Web-Formularen auf der Adobe Experience Manager-Plattform. Diese Funktion ermöglicht es Organisationen, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, bei denen Zugriffe und Interaktionen statt über eine herkömmliche grafische Benutzeroberfläche über APIs erfolgen. Adaptive Headless-Formulare von AEM ermöglichen eine größere Flexibilität und Skalierbarkeit bei der Formularentwicklung und -bereitstellung sowie ein verbessertes Kundenerlebnis durch die Möglichkeit, Formular-Design und -funktionalität an spezifische Anforderungen anzupassen. Durch die Nutzung der Funktionen von AEM und Headless-Technologie bietet diese Lösung eine robuste Plattform für die Erstellung, Verwaltung und Bereitstellung von Web-Formularen für verschiedene Nutzungsszenarien und Anwendungen.
+Die adaptiven Headless-Formulare von Adobe Experience Manager (AEM) bilden eine Lösung zum Erstellen und Verwalten von Headless-Web-Formularen auf der Adobe Experience Manager-Plattform. Diese Funktion ermöglicht es Organisationen, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, bei denen Zugriffe und Interaktionen statt über eine herkömmliche grafische Benutzeroberfläche über APIs erfolgen. AEM Headless Adaptive Forms ermöglicht eine größere Flexibilität und Skalierbarkeit bei der Entwicklung und Bereitstellung von Formularen sowie ein verbessertes Benutzererlebnis durch die Möglichkeit, den Formularentwurf und die Funktionen an spezifische Anforderungen anzupassen. Durch die Verwendung der Funktionen von AEM und der Headless-Technologie bietet diese Lösung eine robuste Plattform zum Erstellen, Verwalten und Bereitstellen von Web-Formularen für verschiedene Anwendungsfälle und Anwendungen.
 
 ![Erstellen und natives Rendern eines Formulars auf einer Website, in einer Anwendung oder in nicht visuellen Interaktionen](/help/assets/headless-forms-for-any-device.jpeg)
 
-Adaptive Headless-Formulare unterstützen Sie bei Folgendem:
+Adaptive Headless-Formulare helfen Ihnen bei Folgendem:
 
-* Erstellen hochwertiger Mehrkanal-Formulare in der gewünschten Programmiersprache
-* Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen
-* Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen
-* Nutzung der [Leistungsfähigkeit von Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=de)
+* Erstellen Sie hochwertige Mehrkanal-Formulare in der gewünschten Programmiersprache.
+* Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen.
+* Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen.
+* Mit der [Power von Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Darüber hinaus können Sie eigene Komponenten entwickeln, um ein Formular mit einem beliebigen UI-Framework und einer beliebigen Programmiersprache wiederzugeben. Sie können auch vordefinierte React-Komponenten verwenden, um ein adaptives Headless-Formular zu rendern.
 

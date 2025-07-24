@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 100%
+source-wordcount: '127'
+ht-degree: 58%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ### Problem
 
-Wenn Sie `mvn -PautoInstallPackage clean install` oder ähnliche Befehle zum Bereitstellen eines AEM-Archetyp-Projekts verwenden, kann das Projekt nicht bereitgestellt werden.
+Wenn Sie die `mvn -PautoInstallPackage clean install` oder ähnliche Befehle zum Bereitstellen eines AEM Archetype-Projekts verwenden, kann das Projekt nicht bereitgestellt werden.
 
 ### Grund
 
-Dies kann an einer nicht unterstützten Version oder einer beschädigten Installation von node.js oder NPM liegen.
+Dies kann aufgrund einer nicht unterstützten Version oder einer beschädigten Installation von `node.js` oder `NPM` passieren.
 
 ### Lösung
 
 1. Entfernen Sie die [vorhandenen Installationen von Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) vollständig aus Ihrer Umgebung.
 
-1. Installieren Sie Node.JS 16.13.0 oder höher mit NPM.
+1. Installieren Sie `node.JS 16.13.0` oder höher mit `NPM`.
 
 1. Starten Sie den Computer neu.
 
@@ -41,7 +41,7 @@ Dies kann an einer nicht unterstützten Version oder einer beschädigten Install
 
 ### Problem
 
-Wenn Sie `mvn clean install` oder ähnliche Befehle zum Bereitstellen eines AEM-Archetyp-Projekts verwenden, kann das Projekt nicht bereitgestellt werden.
+Wenn Sie die `mvn clean install` oder ähnliche Befehle zum Bereitstellen eines AEM Archetype-Projekts verwenden, kann der Befehl nicht ausgeführt werden.
 
 ### Grund
 
