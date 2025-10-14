@@ -33,7 +33,7 @@ ht-degree: 74%
    + [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=de)
    + [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de)
    + [API für adaptive Headless-Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-+ [Häufig gestellte Fragen ](faq.md)
++ [Häufig gestellte Fragen &#x200B;](faq.md)
 + [Fehlerbehebung](troubleshooting.md)
 + [Microsoft Visual Studio Code-Erweiterung für adaptive Headless-Formulare](visual-studio-code-extension-for-headless-adaptive-forms.md)
 

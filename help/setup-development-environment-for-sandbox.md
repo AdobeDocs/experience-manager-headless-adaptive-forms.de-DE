@@ -26,7 +26,7 @@ Bereit zum Erstellen und Testen von adaptiven Headless-Formularen in Cloud Servi
 
 * Erstellen Sie ein AEM as a Cloud Service-Programm: Folgen Sie den Schritten 1 bis 7 des Artikels zum [Erstellen von Programmen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program), um ein Programm für Ihre Organisation zu erstellen.
 
-* Aktivieren [ den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
+* Aktivieren [&#x200B; den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
 
 ## Einrichten des Arbeitsablaufs
 
