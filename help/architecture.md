@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Adaptive Headless-Formulare**: Ein adaptives Headless-Formular wird als JSON-Datei dargestellt. Die JSON-Struktur definiert Komponenten, Einschränkungen und die Struktur eines Formulars.
 
-**Frontend-Apps**: Frontend-Apps wie SPA (Einzelseitenanwendungen), Mobile Apps und JavaScript-Apps verwenden adaptive Headless-Formulare (die JSON-Formulardarstellung) und rendern das Formular auf einem Client. Sie können die React-Renderer-Komponente verwenden, die mit adaptiven Headless-Formularen bereitgestellt wird, um ein adaptives Formular zu rendern, oder Ihre eigene benutzerdefinierte Komponente erstellen, um adaptive Headless-Formulare nativ zu rendern. Bei Anwendungsfällen für native Mobile- und Offline-Formulare wird empfohlen, eine eigene App zu erstellen und Formulardefinitionen über die API abzurufen (siehe [ für Mobile Forms](mobile-forms-best-practices.md).
+**Frontend-Apps**: Frontend-Apps wie SPA (Einzelseitenanwendungen), Mobile Apps und JavaScript-Apps verwenden adaptive Headless-Formulare (die JSON-Formulardarstellung) und rendern das Formular auf einem Client. Sie können die React-Renderer-Komponente verwenden, die mit adaptiven Headless-Formularen bereitgestellt wird, um ein adaptives Formular zu rendern, oder Ihre eigene benutzerdefinierte Komponente erstellen, um adaptive Headless-Formulare nativ zu rendern. Bei Anwendungsfällen für native Mobile- und Offline-Formulare wird empfohlen, eine eigene App zu erstellen und Formulardefinitionen über die API abzurufen (siehe [&#x200B; für Mobile Forms](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -88,7 +88,7 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Visual Studio Code-Erweiterung**: [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) zur Unterstützung beim Erstellen einer gültigen JSON-Struktur. Sie bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten in einer JSON-Struktur.
 
-**HTTP- und JavaScript**-APIs[ Mit HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) können Sie den Übermittlungsstatus von Headless-Formularen auflisten, abrufen, validieren, senden und verfolgen. <!-- URL is 404!! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
+**HTTP- und JavaScript**-APIs[&#x200B; Mit HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) können Sie den Übermittlungsstatus von Headless-Formularen auflisten, abrufen, validieren, senden und verfolgen. <!-- URL is 404!! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 **JSON-Formel**: Hierbei handelt es sich um eine Implementierung der Grammatik von Formularausdrücken, mit der Sie die JSON-Struktur abfragen und Regeln für adaptive Headless-Formulare erstellen können. Die Grammatik ist eine Mischung aus tabellenähnlichen Funktionen und Operatoren und [JMESPath](https://jmespath.org/), einer JSON-Abfragesprache. Sie können den [Spielplatz](https://opensource.adobe.com/json-formula/dist/index.html) nutzen, um die Syntax und Funktionen der JSON-Formeln auszuprobieren.
 
