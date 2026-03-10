@@ -222,5 +222,5 @@ Für mobile und Offline-Szenarien wird empfohlen, [Ihre eigene App zu erstellen 
 * [Häufig gestellte Fragen](faq.md)
 * [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md)
 * [Headless-APIs für adaptive Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+* [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)
