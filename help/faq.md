@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: headless, adaptives Formular, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 69%
+source-wordcount: '837'
+ht-degree: 41%
 
 ---
 
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Gibt es ein Plugin, das die Entwicklung von Headless AF erleichtert?
 
 Ja - Mit einer Visual Studio Code-Erweiterung können Sie adaptive Headless-Formulare manuell in JSON erstellen.
+
+## Was ist der empfohlene Ansatz für mobile oder Offline-Formulare? {#mobile-offline-forms}
+
+Erstellen Sie Ihre eigene native App und rufen Sie Formulardefinitionen über die Headless Adaptive Forms-API ab. Sie können optional Offline-Unterstützung implementieren (z. B. lokale Speicherung und Synchronisierung). Siehe [Best Practices für Mobile Forms](mobile-forms-best-practices.md) für den empfohlenen Ansatz und Links zu APIs.
+
+## Wie verwendet man GraphQL oder Headless-APIs mit AEM Forms?
+
+AEM Headless Adaptive Forms verwenden **HTTP/REST-APIs**, nicht GraphQL. Ihre App ruft diese APIs auf, um Formulare aufzulisten, eine Formulardefinition (JSON) abzurufen, den Übermittlungsstatus zu validieren, zu übermitteln und zu verfolgen. Verwenden Sie die [HTTP-APIs für adaptive Headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)Formulare als vollständige Referenz. Informationen dazu, wie Formulare abgerufen und gerendert werden, finden Sie unter [Architektur](architecture.md) und [Grundlegendes zu Headless-Formularen](understanding-headless-forms.md).
+
+## Wie kann ich Headless-Formulare mithilfe von React-Komponenten in Adobe AEM Forms implementieren und gestalten?
+
+Sie implementieren und gestalten Headless-Formulare, indem Sie Ihre eigenen React-Komponenten und CSS (oder eine Benutzeroberflächenbibliothek wie die Material-Benutzeroberfläche) verwenden. Die Formularlogik - Status, Validierung und Regeln - stammt aus dem Forms Web SDK und dem Formular-JSON. Ihre App stellt die Benutzeroberfläche bereit, die sie rendert.
+
+* Informationen zum Gestalten eines Headless-Formulars mit einer React-Benutzeroberflächenbibliothek finden Sie unter [Verwenden einer benutzerdefinierten React-Bibliothek zum Rendern eines Headless-Formulars](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Informationen zum Erstellen und Zuordnen benutzerdefinierter React-Komponenten zu Formularfeldern finden Sie unter [Verwenden benutzerdefinierter Komponenten zum Rendern eines Headless-Formulars](developing-for-headless-forms-using-your-own-components.md).
+
+Konzepte, z. B. für die Verwendung von Headless-Formularen, Zustandsverwaltung und Validierung, finden Sie unter [Grundlagen zu Headless-Formularen](understanding-headless-forms.md).
+
+## Wie kann ich AEM Forms mit benutzerdefiniertem CSS, Designs, Regel-Editoren und Headless-Formularen implementieren und anpassen?
+
+**Headless-Formulare:** Styling und Look-and-Feel stehen vollständig unter Ihrer Kontrolle. Sie verwenden Ihre eigenen React-Komponenten (oder andere) und Ihr eigenes CSS. Es gibt keine integrierten Designs. Siehe [Verwenden einer benutzerdefinierten React-Bibliothek zum Rendern eines Headless-Formulars](use-google-material-ui-react-components-to-render-a-headless-form.md) und [Verwenden benutzerdefinierter Komponenten zum Rendern eines Headless-Formulars](developing-for-headless-forms-using-your-own-components.md) um Headless-Formulare zu implementieren und zu gestalten.
+
+**Klassische AEM Forms (Designs, Regeleditor, visueller Editor):** Benutzerdefiniertes CSS, der Design-Editor und der Regeleditor gelten für das klassische Authoring-Erlebnis für adaptive Forms (ohne Headless). Informationen zu diesen Themen finden Sie in der [Dokumentation zu AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) auf Experience League.
 
 ## Kann ein adaptives Headless-Formular eine Verbindung zu jedem CRM herstellen, um Daten zu lesen oder zu schreiben?
 

@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: Headless-CMS, adaptive Formulare, Headless-Benutzeroberfläche, Headful-CMS, Sprachassistenten, Alexa, Chatbots, WhatsApp-Architektur
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 57%
+source-wordcount: '361'
+ht-degree: 50%
 
 ---
 
@@ -27,7 +27,9 @@ Adaptive Headless-Formulare helfen Ihnen bei Folgendem:
 * Erstellen Sie hochwertige Mehrkanal-Formulare in der gewünschten Programmiersprache.
 * Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen.
 * Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen.
-* Nutzen Sie die [Leistungsfähigkeit von Adobe Experience Manager Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Nutzen Sie die [Leistungsfähigkeit von Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+
+Für Anwendungsfälle von mobilen und Offline-Formularen wird empfohlen, eine eigene native App zu erstellen und Formulardefinitionen über die Headless Adaptive Forms-API abzurufen. Siehe [Best Practices für Mobile Forms](mobile-forms-best-practices.md) für Details.
 
 Darüber hinaus können Sie eigene Komponenten entwickeln, um ein Formular mit einem beliebigen UI-Framework und einer beliebigen Programmiersprache wiederzugeben. Sie können auch vordefinierte React-Komponenten verwenden, um ein adaptives Headless-Formular zu rendern.
 
