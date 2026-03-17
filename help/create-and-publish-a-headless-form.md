@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 46%
+source-wordcount: '1037'
+ht-degree: 48%
 
 ---
 
@@ -36,7 +36,7 @@ Fangen wir an:
 
 Um eine React-App zu erstellen und auszuführen, muss auf Ihrem Computer Folgendes installiert sein:
 
-* Installieren Sie die [neueste Version von Git](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Installieren Sie die [neueste Git-Version](https://git-scm.com/downloads). Wenn Sie mit Git noch nicht vertraut sind, lesen Sie [Git installieren](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 
@@ -52,7 +52,7 @@ Nachdem die Anforderungen erfüllt sind, führen Sie die folgenden Schritte aus,
 
 
 
-## &#x200B;1. Einrichten des Headless-Starter-Kits für adaptive Formulare {#install}
+## &#x200B;1.  Einrichten des Headless-Starter-Kits für adaptive Formulare {#install}
 
 Das Starter Kit ist eine React-App mit einem Beispiel-Headless-adaptiven Formular und entsprechenden Bibliotheken. Verwenden Sie das Kit, um Ihre adaptiven Headless-Formulare und die entsprechenden React-Komponenten zu entwickeln und zu testen. Führen Sie die folgenden Befehle aus, um das Starter Kit für adaptive Headless-Formulare einzurichten:
 
@@ -97,9 +97,11 @@ Nach der Einrichtung des Starter Kits können Sie eine Vorschau des adaptiven He
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. Verwenden Sie den folgenden Befehl, um die App auszuführen:
 
@@ -116,7 +118,7 @@ Nach der Einrichtung des Starter Kits können Sie eine Vorschau des adaptiven He
 
    <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## &#x200B;3. Erstellen und Rendern Ihres eigenen adaptiven Headless-Formulars{#custom}
+## &#x200B;3. Erstellen und Rendern eines eigenen adaptiven Headless-Formulars{#custom}
 
 Ein adaptives Headless-Formular stellt das Formular und seine Komponenten (z. B. Felder und Schaltflächen) im JSON-Format (JavaScript Object Notation) dar. Der Vorteil der Verwendung des JSON-Formats besteht darin, dass es einfach geparst und von verschiedenen Programmiersprachen verwendet werden kann, was es zu einer bequemen Möglichkeit macht, Formulardaten zwischen Systemen auszutauschen. Öffnen Sie die `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`-Datei, um das in der App enthaltene Beispiel-Headless-adaptive Formular anzuzeigen.
 

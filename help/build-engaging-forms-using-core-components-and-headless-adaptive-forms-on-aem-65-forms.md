@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 67%
+source-wordcount: '2311'
+ht-degree: 65%
 
 ---
 
@@ -40,7 +40,7 @@ So verwenden Sie dieses praktische Labor:
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* Forms [Aktivieren von Headless Adaptive &#x200B;](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
+* Forms [Aktivieren von Headless Adaptive ](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
 
 * Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. In den Beispielen in diesem Dokument wird Microsoft Visual Studio Code verwendet.
 
@@ -86,11 +86,9 @@ Als Business-Anwenderin bzw. -Anwender werden Sie den Editor für adaptive Forms
 1. Erstellen Sie einen Übermittlungsendpunkt für das Formular:
 
    1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
-
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Dieser bestimmte Endpunkt dient als Beispiel für das Senden und Anzeigen von Daten. In der eigentlichen Produktion verwenden Sie eigene Endpunkte oder Datenquellen, um die erfassten Daten zu speichern.
@@ -100,15 +98,12 @@ Als Business-Anwenderin bzw. -Anwender werden Sie den Editor für adaptive Forms
    1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur AEM Forms-Web-Benutzeroberfläche und dann zu **Forms** > **Forms und Dokumente**.
 
    1. Klicken Sie auf **Erstellen** und wählen Sie „Adaptives Formular“.
-
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Wählen Sie die Vorlage **Leer mit Kernkomponenten** auf dem Vorlagenauswahlbildschirm, wie unten gezeigt, und klicken Sie auf **Weiter**.
-
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Geben Sie `Contact us` als **Titel** des Formulars ein. Stellen Sie sicher, dass der **Name** des Formulars `contact-us` lautet.
-
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Klicken Sie auf **Erstellen**. Es öffnet sich ein Dialogfeld.
@@ -345,7 +340,7 @@ Jetzt nehmen wir als Business-Anwenderin bzw. -Anwender Änderungen am Formular 
 
 1. Öffnen Sie die AEM Forms-Verwaltungsoberfläche im Browser. Beispiel: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Öffnen Sie das Formular **Kontakt** und klicken Sie auf **Bearbeiten.** Das Formular wird im Editor für adaptive Formulare geöffnet.
+1. Wählen Sie das Formular **Kontakt** und klicken Sie auf **Bearbeiten.** Das Formular wird im Editor für adaptive Forms geöffnet.
 
 
 1. Öffnen Sie das Feld **Telefonnummer** und klicken Sie auf das **Bearbeitungssymbol (Bleistiftsymbol)** in der Symbolleiste. Wenn Sie die Popup-Symbolleiste nicht sehen können, wechseln Sie in den Bearbeitungsmodus. Klicken Sie **oben rechts** der Schaltfläche **Vorschau** auf „Bearbeiten“.
@@ -513,13 +508,13 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
 
 ## Häufig gestellte Fragen (FAQs)
 
-+++ Sind Kernkomponenten öffentlich verfügbar?
++++ Sind Kernkomponenten öffentlich verfügbar?  
 
 Ja, die Kernkomponenten für adaptive Formulare sind mit AEM 6.5 Forms as a Cloud Service verfügbar. Sie benötigen das AEM Forms 6.5 Service Pack 16 oder höher, um die Kernkomponenten für adaptive Formulare verwenden zu können.
 
 +++
 
-+++ Benötigen Headless-Formulare eine separate Lizenz?
++++ Benötigen Headless-Formulare eine separate Lizenz?  
 
 Nein, Headless-Formulare verwenden dieselbe Metrik für den Lizenzwert, nämlich die Anzahl der Formularübertragungen.
 
@@ -534,12 +529,12 @@ Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Hea
 
 ## Ressourcen
 
-* [Einführung in die Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Einführung zu Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Aktualisieren der Stile für auf Kernkomponenten basierende adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Aktualisierungsstile für die auf Kernkomponenten basierenden adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Adaptive Headless-Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

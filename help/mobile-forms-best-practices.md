@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: Mobile Forms, native App, Offline-Formulare, Headless-API
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 5%
@@ -38,4 +38,4 @@ Dieser Ansatz sorgt dafür, dass Ihre App auch dann wartbar bleibt, wenn sich An
 * [APIs für adaptive Headless-Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Formulare programmgesteuert auflisten, abrufen, validieren und senden.
 * [Architektur](architecture.md) - So funktionieren Headless-adaptive Formulare und wie sie von Frontend-Apps genutzt werden.
 
-Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=de).
+Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).

@@ -3,10 +3,10 @@ title: Übersicht über AEM Headless Adaptive Forms
 description: Übersicht über adaptive Headless-Formulare von AEM.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 55%
+source-wordcount: '513'
+ht-degree: 58%
 
 ---
 
@@ -47,6 +47,7 @@ Adaptive Headless-Formulare werden laufend verbessert. Besuchen Sie diese Seite 
 
 * The service was executing some event handlers twice. The issue is fixed.
 * Fixing Data Generation with different values of dataRef, name and type.
+-->
 
 <!-- ### React Renderer component -->
 
@@ -80,7 +81,7 @@ Kernkomponenten sind eine Reihe standardisierter WCM-Komponenten (Web Content Ma
 
 ### Spezifikationen für „Adaptive Formulare V2“
 
-Die Spezifikation für adaptive Headless-Formulare bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die für die Definition adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf)-Format verfügbar.
+Die Spezifikation für adaptive Headless-Formulare bietet detaillierte Informationen zu allen Komponenten, Einschränkungen und Methoden, die für die Definition adaptiver Headless-Formulare verfügbar sind. Die Spezifikation ist im [PDF](/help/assets/headless-adaptive-forms-specification.pdf)-Format verfügbar.
 
 ### HTTP- und JS-API
 
@@ -90,7 +91,8 @@ Die Spezifikation für adaptive Headless-Formulare bietet detaillierte Informati
 
 Die [Visual Studio Code-Erweiterung](visual-studio-code-extension-for-headless-adaptive-forms.md) hilft beim Erstellen einer gültigen JSON-Struktur. Sie bietet IntelliSense-Unterstützung und -Validierung für die JSON-Struktur von Formularen sowie allgemeine Funktionen wie das Hinzufügen, Löschen oder Umbenennen von Komponenten in einer JSON-Struktur.
 
-<!-- ## What's next
+<!-- 
+## What's next
 
 The following features would be available in upcoming releases:
 

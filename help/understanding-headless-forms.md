@@ -7,15 +7,14 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: Headless-Formulare, Headless-Formularbibliothek, adaptive Formulare, Statusverwaltung, Validierung, Design-System, SSR, CMS
-hide: false
-exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 5%
 
 ---
-
 
 # Grundlegendes zu Headless-Formularen - Konzepte und häufig gestellte Fragen {#understanding-headless-forms}
 
@@ -43,7 +42,7 @@ In AEM Headless Adaptive Forms ist das Formular eine [JSON-Struktur](architectur
 | **Status und Validierung** | An Bibliothekskomponenten gebunden | Wird über APIs/Hooks bereitgestellt; jede Benutzeroberfläche kann daran gebunden werden |
 | **Kanäle** | Normalerweise Web (manchmal ein Framework) | Dieselbe Formulardefinition kann für Web, Mobilgeräte, Chat usw. verwendet werden. |
 
-Mit AEM Headless Adaptive Forms [&#x200B; Sie (ein Formular erstellen und &#x200B;](create-and-publish-a-headless-form.md)) einmal in AEM veröffentlichen. Jeder Client (React, Angular, Native Mobile, Chatbot) kann [&#x200B; Formular-JSON abrufen &#x200B;](architecture.md) mit der entsprechenden Benutzeroberfläche für diesen Kanal rendern.
+Mit AEM Headless Adaptive Forms [ Sie (ein Formular erstellen und ](create-and-publish-a-headless-form.md)) einmal in AEM veröffentlichen. Jeder Client (React, Angular, Native Mobile, Chatbot) kann [ Formular-JSON abrufen ](architecture.md) mit der entsprechenden Benutzeroberfläche für diesen Kanal rendern.
 
 ### Warum sollte ich Headless-Formulare anstelle einer auf der Benutzeroberfläche basierenden Formularlösung verwenden?
 
@@ -117,13 +116,13 @@ Asynchrone Validierung kann auf Anwendungsebene implementiert werden:
 * Verwenden Sie in **benutzerdefinierten Komponenten** Status-/Handler-Hooks, um Ihr Backend aufzurufen (z. B. die API zur Benutzernamenverfügbarkeit), aktualisieren Sie dann die Gültigkeit des Felds oder zeigen Sie über die Laufzeit-APIs oder den lokalen Status, den Sie in der Benutzeroberfläche anzeigen, einen Fehler an.
 * Alternativ können Sie die Prüfung **on blur oder before submit** durchführen und den Feldstatus mit einer benutzerdefinierten Meldung auf ungültig setzen, wenn die asynchrone Prüfung fehlschlägt.
 
-Das genaue Muster hängt davon ab, wie Ihre App mit dem [Geschäftsregelprozessor) &#x200B;](architecture.md) benutzerdefinierten Komponenten integriert wird.
+Das genaue Muster hängt davon ab, wie Ihre App mit dem [Geschäftsregelprozessor) ](architecture.md) benutzerdefinierten Komponenten integriert wird.
 
 ### Wie sende ich Daten mithilfe von Headless-Formularen an APIs?
 
 Die Übermittlung wird von der Benutzeroberfläche entkoppelt:
 
-* **AEM-Übermittlungsaktionen** - Sie konfigurieren das Formular in AEM so, dass es an REST-Endpunkte, E-Mail oder Integrationen (z. B. Microsoft Dynamics, Salesforce) gesendet wird. Das Formular wird über AEM übermittelt, das den eigentlichen HTTP/Backend-Aufruf verarbeitet. Siehe [Verwenden von Ereignissen zum Verarbeiten und Senden von &#x200B;](use-events-to-handle-and-submit-form-data.md)).
+* **AEM-Übermittlungsaktionen** - Sie konfigurieren das Formular in AEM so, dass es an REST-Endpunkte, E-Mail oder Integrationen (z. B. Microsoft Dynamics, Salesforce) gesendet wird. Das Formular wird über AEM übermittelt, das den eigentlichen HTTP/Backend-Aufruf verarbeitet. Siehe [Verwenden von Ereignissen zum Verarbeiten und Senden von ](use-events-to-handle-and-submit-form-data.md)).
 * **Client-seitiges Senden** - Ihre App kann auf gesendete oder erfasste Formulardaten aus dem Laufzeitstatus warten und sie an Ihre eigenen APIs senden. Mit [HTTP-APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) wird der Übermittlungsstatus aufgelistet, abgerufen, validiert, gesendet und verfolgt.
 * **Vorbefüllen** - Daten können über REST-Endpunkte oder Server-seitig vorbefüllt werden, sodass der Status beim Laden des Formulars bereits ausgefüllt ist. Siehe [Storybook - Beispiel zum Vorbefüllen](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data).
 
@@ -169,7 +168,7 @@ Das [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) en
 
 ### Wie handhabe ich bedingte Felder (basierend auf der Eingabe ein-/ausblenden)?
 
-Die bedingte Sichtbarkeit wird durch **Regeln** im Formular-JSON gesteuert, das vom Geschäftsregelprozessor ausgewertet wird. Sie definieren Bedingungen (z. B. „wenn Feld A gleich X ist, Feld B anzeigen„); der Laufzeitstatus wird aktualisiert (z. B. `state.visible`). Ihre Komponenten müssen nur **Status respektieren** (z. B. `if (!state.visible) return null;`). Für die Ein-/Ausblendung über das Rendern des Status hinaus ist keine zusätzliche UI-Logik erforderlich. Kaskadierendes und bedingtes Verhalten wird in der [Spezifikation für adaptive Forms](/help/assets/headless-adaptive-forms-specification.pdf) dokumentiert und in &quot;[&#x200B; - Kaskadierende Felder“ &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down). Siehe auch [FAQ - Kaskadierende Felder](faq.md#do-headless-adaptive-forms-support-cascading-fields).
+Die bedingte Sichtbarkeit wird durch **Regeln** im Formular-JSON gesteuert, das vom Geschäftsregelprozessor ausgewertet wird. Sie definieren Bedingungen (z. B. „wenn Feld A gleich X ist, Feld B anzeigen„); der Laufzeitstatus wird aktualisiert (z. B. `state.visible`). Ihre Komponenten müssen nur **Status respektieren** (z. B. `if (!state.visible) return null;`). Für die Ein-/Ausblendung über das Rendern des Status hinaus ist keine zusätzliche UI-Logik erforderlich. Kaskadierendes und bedingtes Verhalten wird in der [Spezifikation für adaptive Forms](/help/assets/headless-adaptive-forms-specification.pdf) dokumentiert und in &quot;[ - Kaskadierende Felder“ ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down). Siehe auch [FAQ - Kaskadierende Felder](faq.md#do-headless-adaptive-forms-support-cascading-fields).
 
 ## Leistung und Skalierbarkeit {#performance-scalability}
 
@@ -222,5 +221,5 @@ Für mobile und Offline-Szenarien wird empfohlen, [Ihre eigene App zu erstellen 
 * [Häufig gestellte Fragen](faq.md)
 * [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md)
 * [Headless-APIs für adaptive Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de)
+* [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

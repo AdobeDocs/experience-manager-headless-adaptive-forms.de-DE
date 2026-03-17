@@ -3,15 +3,15 @@ title: Erste Schritte mit adaptiven Headless-Formularen
 description: Erste Schritte mit adaptiven Headless-Formularen
 keywords: Headless, adaptives Formular, Tutorial
 hide: true
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 50%
+source-wordcount: '362'
+ht-degree: 51%
 
 ---
 
 
-# Erste Schritte mit Headless Adaptive Forms
+# Erste Schritte mit adaptiven Headless-Formularen
 
 Dieses Tutorial bietet Ihnen ein End-to-End-Framework zum Erstellen eines adaptiven Headless-Formulars. Das Tutorial ist in einen Anwendungsfall und mehrere Handbücher unterteilt. Jedes Handbuch hilft Ihnen dabei, neue Funktionen zu erlernen und zum adaptiven Headless-Formular hinzuzufügen, das in diesem Tutorial erstellt wird. Sie verfügen nach jedem Handbuch über ein funktionierendes adaptives Headless-Formular. Am Ende dieses Tutorials sollten Sie zu Folgendem in der Lage sein:
 

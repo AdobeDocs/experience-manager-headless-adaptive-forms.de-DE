@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 51%
+source-wordcount: '1060'
+ht-degree: 57%
 
 ---
 
@@ -35,7 +35,7 @@ Die wichtigsten Schritte beim Rendern eines Formulars mit den Komponenten der Go
 
 ![](assets/headless-forms-graphics-source-main.svg)
 
-## &#x200B;1. Installieren der Google Material-Benutzeroberfläche
+## &#x200B;1. Google Material-Benutzeroberfläche installieren
 
 Standardmäßig verwendet das Starterkit [Adobe Spectrum](https://spectrum.adobe.com/)-Komponenten. Konfigurieren wir sie für die Verwendung der [Google Material-Benutzeroberfläche](https://mui.com/):
 
@@ -58,10 +58,10 @@ Dadurch werden die npm-Bibliotheken der Google Material-Benutzeroberfläche inst
 
 Erstellen wir eine benutzerdefinierte Komponente, die die standardmäßige Komponente [Texteingabe](https://spectrum.adobe.com/page/text-field/) durch die Komponente [Textfeld der Google-](https://mui.com/material-ui/react-text-field/) ersetzt.
 
-Für jeden Komponententyp (fieldType oder [), &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) `:type` in einer Headless-Formulardefinition verwendet wird, ist eine separate Komponente erforderlich. Beispielsweise sind im Kontaktformular, das Sie im vorherigen Abschnitt erstellt haben, die Felder Name, E-Mail und Telefon vom Typ `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) und das Meldungsfeld vom Typ `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
+Für jeden Komponententyp (fieldType oder [), ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) `:type` in einer Headless-Formulardefinition verwendet wird, ist eine separate Komponente erforderlich. Beispielsweise sind im Kontaktformular, das Sie im vorherigen Abschnitt erstellt haben, die Felder Name, E-Mail und Telefon vom Typ `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) und das Meldungsfeld vom Typ `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Erstellen wir eine benutzerdefinierte Komponente, um alle Formularfelder, die die Eigenschaft „fieldType[&#x200B; „text-input“ &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def), mit der Komponente &quot;[&#x200B; UI Text Field](https://mui.com/material-ui/react-text-field/) zu überlagern.
+Erstellen wir eine benutzerdefinierte Komponente, um alle Formularfelder, die die Eigenschaft „fieldType[ „text-input“ ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def), mit der Komponente &quot;[ UI Text Field](https://mui.com/material-ui/react-text-field/) zu überlagern.
 
 
 So erstellen Sie die benutzerdefinierten Komponente und ordnen sie der Eigenschaft [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) zu:
@@ -111,7 +111,7 @@ Der Teil `state.visible` überprüft, ob die Komponente als sichtbar festgelegt 
 
 Ihre benutzerdefinierte Komponente `materialtextfield` ist bereit. Legen wir diese benutzerdefinierte Komponente fest, um alle Instanzen von [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) durch „Textfeld der Google Material-Benutzeroberfläche“ zu ersetzen.
 
-## &#x200B;3. Ordnen Sie Headless-Formularfeldern benutzerdefinierten Komponenten zu
+## &#x200B;3. Zuordnen einer benutzerdefinierten Komponente zu Headless-Formularfeldern
 
 Der Prozess der Verwendung von Bibliothekskomponenten von Drittanbietern zum Rendern von Formularfeldern wird als Zuordnung bezeichnet. Sie ordnen jede [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) einer entsprechenden Komponente einer Drittanbieterbibliothek zu.
 

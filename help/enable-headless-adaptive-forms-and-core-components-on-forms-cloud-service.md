@@ -11,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 74%
+source-wordcount: '943'
+ht-degree: 72%
 
 ---
 
@@ -43,7 +43,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## &#x200B;1. Klonen Sie Ihr AEM Forms as a Cloud Service Git-Repository {#clone-git-repository}
+## &#x200B;1. Klonen des AEM Forms as a Cloud Service-Git-Repositorys {#clone-git-repository}
 
 1. Melden Sie sich bei [Cloud Manager](https://my.cloudmanager.adobe.com/) an und wählen Sie Ihre Organisation und Ihr Programm aus.
 
@@ -65,7 +65,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    Geben Sie bei Aufforderung die Anmeldeinformationen ein. Das Repository wird auf Ihrem lokalen Computer geklont.
 
 
-## &#x200B;2. Hinzufügen von Abhängigkeiten von Kernkomponenten für adaptive Formulare zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Hinzufügen von Abhängigkeiten von adaptiven Forms-Kernkomponenten zu Ihrem Git-Repository {#add-adaptive-forms-core-components-dependencies}
 
 1. Öffnen Sie Ihren Git-Repository-Ordner in einem einfachen Texteditor. Beispiel: VS Code.
 1. Öffnen Sie die Datei `[AEM Repository Folder]\pom.xml`, um sie zu bearbeiten.
@@ -282,7 +282,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
 
 1. Speichern und schließen Sie die Datei.
 
-## &#x200B;3. Aktualisieren Sie das Projekt, um die neueste Version der Forms-Kernkomponenten einzuschließen:
+## &#x200B;3.  Aktualisieren Sie das Projekt, um die neueste Version der Forms-Kernkomponenten einzuschließen:
 
 1. Öffnen Sie [AEM-Archetyp-Projektordner]/pom.xml zur Bearbeitung.
 
@@ -303,7 +303,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
       git push origin
       ```
 
-1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten von Adaptive Forms für die entsprechende Umgebung aktiviert. Außerdem werden Ihrer Forms as a Cloud Service-Umgebung eine Vorlage für adaptive Formulare (Kernkomponenten) sowie ein Design für Canvas 3.0 hinzugefügt, was Ihnen Optionen zum Anpassen und Erstellen von Kernkomponenten auf Basis von adaptiven Formularen bietet.
 
@@ -316,7 +316,7 @@ Die [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-mana
 
 ### Welche Funktionen werden hinzugefügt, wenn Kernkomponenten aktiviert sind? {#core-components-capabilities}
 
-Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
 * Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten.

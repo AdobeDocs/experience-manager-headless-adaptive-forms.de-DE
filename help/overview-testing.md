@@ -10,10 +10,10 @@ keywords: Headless-CMS, adaptive Formulare, Headless-Benutzeroberfläche, Headfu
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 57%
+source-wordcount: '331'
+ht-degree: 54%
 
 ---
 
@@ -28,7 +28,7 @@ Adaptive Headless-Formulare helfen Ihnen bei Folgendem:
 * Erstellen Sie hochwertige Mehrkanal-Formulare in der gewünschten Programmiersprache.
 * Native Integration von Formularen in Ihre Desktop- und Mobile Apps, Websites und Chat-Anwendungen.
 * Wiederverwenden Ihrer proprietären UI-Komponenten mit Formularanwendungen.
-* Mit der [Power von Adobe Experience Manager Forms](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Mit der [Power von Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Darüber hinaus können Sie eigene Komponenten entwickeln, um ein Formular mit einem beliebigen UI-Framework und einer beliebigen Programmiersprache wiederzugeben. Sie können auch vordefinierte React-Komponenten verwenden, um ein adaptives Headless-Formular zu rendern.
 
@@ -154,32 +154,31 @@ Darüber hinaus können Sie eigene Komponenten entwickeln, um ein Formular mit e
         <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
-</div>
+    </div>
 
 
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Bild 1" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Überschrift 1</h2>
-        <p>Beschreibung 1</p>
+        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Image 1" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Bild 2" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Überschrift 2</h2>
-        <p>Beschreibung 2</p>
+        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Image 2" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Bild 3" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Überschrift 3</h2>
-        <p>Beschreibung 3</p>
+        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Image 3" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
 </div>
 
 -->
+<!-- Add more cards as needed -->
 
 ## Wer kann adaptive Headless-Formulare verwenden? {#who-can-use-headless-adaptive-forms}
 
