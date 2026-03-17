@@ -40,7 +40,7 @@ So verwenden Sie dieses praktische Labor:
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* Forms [Aktivieren von Headless Adaptive ](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
+* Forms [Aktivieren von Headless Adaptive &#x200B;](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
 
 * Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. In den Beispielen in diesem Dokument wird Microsoft Visual Studio Code verwendet.
 

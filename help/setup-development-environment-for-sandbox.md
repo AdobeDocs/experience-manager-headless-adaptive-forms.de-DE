@@ -26,7 +26,7 @@ Bereit zum Erstellen und Testen von adaptiven Headless-Formularen in Cloud Servi
 
 * Erstellen Sie ein AEM as a Cloud Service-Programm: Folgen Sie den Schritten 1 bis 7 des Artikels zum [Erstellen von Programmen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program), um ein Programm für Ihre Organisation zu erstellen.
 
-* Aktivieren [ den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
+* Aktivieren [&#x200B; den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
 
 ## Einrichten des Workflows
 
@@ -61,7 +61,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
 </tr>
 <tr>
   <td>
-    3. Tippen Sie für Ihr Programm auf das Symbol … und wählen Sie die Option Programm-</b> bearbeiten <b>. Ein Dialogfeld wird angezeigt. 
+    &#x200B;3. Tippen Sie für Ihr Programm auf das Symbol … und wählen Sie die Option Programm-</b> bearbeiten <b>. Ein Dialogfeld wird angezeigt. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +72,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
 </tr>
 <tr>
   <td>
-    4. Wechseln Sie im Dialogfeld „Programm bearbeiten“ zur </b> „Lösungen und Add-ons <b>", wählen Sie die </b> "Forms <b> - Digitale Registrierung“ aus und tippen Sie auf </b> aktualisieren <b>. 
+    &#x200B;4. Wechseln Sie im Dialogfeld „Programm bearbeiten“ zur </b> „Lösungen und Add-ons <b>", wählen Sie die </b> "Forms <b> - Digitale Registrierung“ aus und tippen Sie auf </b> aktualisieren <b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -117,7 +117,7 @@ So klonen Sie das Repository:
 </tr>
 <tr>
   <td>
-    3. Öffnen Sie auf Ihrem lokalen Computer die Eingabeaufforderung, erstellen Sie einen Ordner und führen Sie den folgenden Befehl aus. Geben Sie die Repository-Anmeldeinformationen ein und fragen Sie nach :
+    &#x200B;3. Öffnen Sie auf Ihrem lokalen Computer die Eingabeaufforderung, erstellen Sie einen Ordner und führen Sie den folgenden Befehl aus. Geben Sie die Repository-Anmeldeinformationen ein und fragen Sie nach :
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Beispiel: </br> 
@@ -243,7 +243,7 @@ Nach erfolgreichem Abschluss des Befehls wird ein Projektordner mit dem im `appI
 </tr>
 <tr>
   <td>
-    3. Tippen Sie für Ihre Pipeline auf das Symbol … und wählen Sie die Option </b> ausführen <b>. Wenn Sie zum Ausführen der Pipeline aufgefordert werden, tippen Sie auf <b> Ausführen </b> und warten Sie, bis die </b> für Pipeline-<b> auf <b> abgeschlossene </b> geändert wird.  
+    &#x200B;3. Tippen Sie für Ihre Pipeline auf das Symbol … und wählen Sie die Option </b> ausführen <b>. Wenn Sie zum Ausführen der Pipeline aufgefordert werden, tippen Sie auf <b> Ausführen </b> und warten Sie, bis die </b> für Pipeline-<b> auf <b> abgeschlossene </b> geändert wird.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
