@@ -24,9 +24,9 @@ Bereit zum Erstellen und Testen von adaptiven Headless-Formularen in Cloud Servi
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/) auf Ihrem lokalen Computer. <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
-* Erstellen Sie ein AEM as a Cloud Service-Programm: Folgen Sie den Schritten 1 bis 7 des Artikels zum [Erstellen von Programmen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program), um ein Programm für Ihre Organisation zu erstellen.
+* Erstellen Sie ein AEM as a Cloud Service-Programm: Folgen Sie den Schritten 1 bis 7 des Artikels zum [Erstellen von Programmen](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program), um ein Programm für Ihre Organisation zu erstellen.
 
-* Aktivieren [&#x200B; den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
+* Aktivieren [&#x200B; den Vorabversionskanal für Ihr Cloud Service-Programm](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
 
 ## Einrichten des Workflows
 
@@ -42,7 +42,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
   1. Melden Sie sich bei <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> an und wählen Sie die Option <b> Experience Manager </b> aus.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -53,7 +53,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
   2. Klicken Sie für die Option <b> Cloud Manager-</b> auf <b> Launch. </b> Eine Liste mit Programmen für Ihre Organisation wird angezeigt.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -64,7 +64,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
     &#x200B;3. Tippen Sie für Ihr Programm auf das Symbol … und wählen Sie die Option Programm-</b> bearbeiten <b>. Ein Dialogfeld wird angezeigt. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/edit-program.png">
     </a>
     <br>
@@ -75,7 +75,7 @@ Um adaptive Headless-Formulare in Ihrer Forms as a Cloud Service Sandbox zu akti
     &#x200B;4. Wechseln Sie im Dialogfeld „Programm bearbeiten“ zur </b> „Lösungen und Add-ons <b>", wählen Sie die </b> "Forms <b> - Digitale Registrierung“ aus und tippen Sie auf </b> aktualisieren <b>. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -100,7 +100,7 @@ So klonen Sie das Repository:
   1. Tippen Sie im Pipeline-Feld Ihres Programms auf <b> Auf Repository-Informationen zugreifen . </b> Ein Dialogfeld mit Repository-Informationen wird angezeigt 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/git-repo.png">
     </a>
     <br>
@@ -224,7 +224,7 @@ Nach erfolgreichem Abschluss des Befehls wird ein Projektordner mit dem im `appI
   1. Melden Sie sich bei <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> an und wählen Sie die Option <b> Experience Manager </b> aus.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -235,7 +235,7 @@ Nach erfolgreichem Abschluss des Befehls wird ein Projektordner mit dem im `appI
   2. Klicken Sie für die Option <b> Cloud Manager-</b> auf <b> Launch. </b> Eine Liste mit Programmen für Ihre Organisation wird angezeigt. Öffnen Sie Ihr Programm. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -246,7 +246,7 @@ Nach erfolgreichem Abschluss des Befehls wird ein Projektordner mit dem im `appI
     &#x200B;3. Tippen Sie für Ihre Pipeline auf das Symbol … und wählen Sie die Option </b> ausführen <b>. Wenn Sie zum Ausführen der Pipeline aufgefordert werden, tippen Sie auf <b> Ausführen </b> und warten Sie, bis die </b> für Pipeline-<b> auf <b> abgeschlossene </b> geändert wird.  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service-Programme" src="assets/run-build-pipeline.png">
     </a>
     <br>

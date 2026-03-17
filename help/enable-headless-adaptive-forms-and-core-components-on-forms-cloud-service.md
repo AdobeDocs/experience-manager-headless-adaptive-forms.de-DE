@@ -303,7 +303,7 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
       git push origin
       ```
 
-1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Nachdem die Dateien in das Git-Repository übertragen wurden, [führen Sie die Pipeline aus](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Nach erfolgreicher Pipeline-Ausführung sind die Kernkomponenten von Adaptive Forms für die entsprechende Umgebung aktiviert. Außerdem werden Ihrer Forms as a Cloud Service-Umgebung eine Vorlage für adaptive Formulare (Kernkomponenten) sowie ein Design für Canvas 3.0 hinzugefügt, was Ihnen Optionen zum Anpassen und Erstellen von Kernkomponenten auf Basis von adaptiven Formularen bietet.
 

@@ -38,4 +38,4 @@ Dieser Ansatz sorgt dafür, dass Ihre App auch dann wartbar bleibt, wenn sich An
 * [APIs für adaptive Headless-Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Formulare programmgesteuert auflisten, abrufen, validieren und senden.
 * [Architektur](architecture.md) - So funktionieren Headless-adaptive Formulare und wie sie von Frontend-Apps genutzt werden.
 
-Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
+Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=de).
