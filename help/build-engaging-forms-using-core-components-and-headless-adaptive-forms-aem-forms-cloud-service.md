@@ -7,7 +7,7 @@ topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2629'
 ht-degree: 63%
 
 ---
@@ -61,7 +61,7 @@ In dieser Lektion lernen Sie die AEM Forms as a Cloud Service-Umgebung kennen, i
 1. Melden Sie sich bei der Authoring-Umgebung von Cloud Service an.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
-1. Klicken Sie auf **Formulare > Formulare und Dokumente**, um zur AEM Forms-Benutzeroberfläche zu navigieren, 
+1. Klicken Sie auf **Formulare > Formulare und Dokumente**, um zur AEM Forms-Benutzeroberfläche zu navigieren,
 
 
 
@@ -86,37 +86,30 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 
    1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
 1. Erstellen Sie ein adaptives Formular mithilfe der Assistenten-Oberfläche:
 
-   1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur Web-Benutzeroberfläche von AEM Forms als Cloud Service und dort zu „Formulare und Dokumente“.
-
+   1. Navigieren Sie auf der in Lektion 1 verwendeten Browser-Registerkarte zur Web-Benutzeroberfläche von AEM Forms as a Cloud Service und dort zu „Formulare und Dokumente“.
       ![](/help/assets/screenshot2028114029.png)
 
-   1. Klicken Sie **Erstellen** > **Adaptives Formular**.
-
+   1. Klicken Sie auf **Erstellen** > **Adaptives Formular**.
       ![](/help/assets/screenshot2028114629.png)
 
    1. Wählen Sie die Vorlage **Leer mit Kernkomponenten** aus dem Vorlagenauswahlbildschirm wie unten gezeigt:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Klicken Sie auf die Registerkarte **Stil** und wählen Sie das Design **wknd-theme** wie unten gezeigt:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Klicken Sie auf **Übermittlung** und wählen Sie die Karte **An REST-Endpunkt übermitteln** aus und geben Sie den öffentlichen Ordner in das Feld **URL für die POST-** ein, wie unten dargestellt:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicken Sie auf **Erstellen**. Geben Sie einen Namen und einen Titel in Ihrem Formular an. Beispiel: **Registrierung**. Klicken Sie auf **Erstellen**.
 
    1. Der Editor für adaptive Formulare wird geöffnet. Schließen Sie alle Popups oder Dialogfelder für Voreinstellungen oder Informationen. Klicken Sie in der linken Leiste auf den Komponenten **Browser und fügen Sie die Komponenten** Kopfzeile“ und **Fußzeile** oben und unten im leeren Formular hinzu.
-
       ![](/help/assets/screenshot2028121929.png)
 
    1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser, um ein Formular ähnlich dem folgenden zu erstellen:
@@ -128,7 +121,6 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Klicken Sie auf die **Telefonnummern**-Komponente, damit das Popup-Menü angezeigt wird. Klicken Sie im Menü auf das **Schraubensymbol**, um das Feld zu konfigurieren.
 
    1. Öffnen Sie die Registerkarte **Validierungen**, markieren Sie das Feld **Erforderlich**, und klicken Sie auf **Fertig**. Die Erfolgsmeldung wird angezeigt.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -140,11 +132,9 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
    1. Füllen Sie das Formular mit Platzhalterdaten aus.
 
    1. Senden Sie das Formular ab.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Überprüfen Sie in der Registerkarte „Anfrage-Container“ die gesendeten Daten.
-
       ![](/help/assets/screenshot2028125829.png)
 
 1. Hinzufügen von Interaktivität zum Formular mit Regeln:
@@ -214,7 +204,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
 
-1. Um das in der Publishing-Umgebung Ihres Cloud-Service gehostete Formular wiederzugeben, benennen Sie die Datei `env_template` um. Um die Datei umzubenennen, klicken Sie mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
+1. Um das in der Publishing-Umgebung Ihres Cloud-Service gehostete Formular wiederzugeben, benennen Sie die Datei `env_template` um.  Um die Datei umzubenennen, klicken Sie mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
 
    ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
@@ -515,7 +505,7 @@ Frontend-Bibliothek der Google Material-Benutzeroberfläche auf eine Headless-We
 
 1. So bewerten Sie die Ausführung derselben Business-Logik in dieser Formularausgabedarstellung:
 
-   Wählen Sie **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten**. Die nachfolgende Option **Möchten Sie `We.Finance` Corporate Kreditkarten-Formular beantragen?** wird deaktiviert.
+   Wählen Sie **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten**. Die nachfolgende Option **Möchten Sie `We.Finance` Firmenkreditkartenformular beantragen?** wird deaktiviert.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -569,32 +559,32 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
 
 ## Häufig gestellte Fragen (FAQs)
 
-+++ Ist der Assistent für adaptive Formulare öffentlich verfügbar?
++++ Ist der Assistent für adaptive Formulare öffentlich verfügbar?  
 
 Ja, es ist mit AEM Forms as a Cloud Service verfügbar.
 
 +++
 
 
-+++ Sind Kernkomponenten öffentlich verfügbar?
++++ Sind Kernkomponenten öffentlich verfügbar?  
 
 Ja, die Kernkomponenten der adaptiven Formulare sind mit AEM Forms as a Cloud Service verfügbar.
 
 +++
 
-+++ Sind Headless-Formulare öffentlich verfügbar?
++++ Sind Headless-Formulare öffentlich verfügbar?  
 
 Ja, Headless-Formulare sind mit AEM Forms as a Cloud Service verfügbar.
 
 +++
 
-+++ Benötigen Headless-Formulare eine separate Lizenz?
++++ Benötigen Headless-Formulare eine separate Lizenz?  
 
 Nein, Headless-Formulare verwenden dieselbe Metrik für den Lizenzwert, nämlich die Anzahl der Formularübertragungen.
 
 +++
 
-+++ Sind Kernkomponenten und Headless-Formulare in AEM 6.5 Forms verfügbar?
++++ Sind Kernkomponenten und Headless-Formulare in AEM 6.5 Forms verfügbar?  
 
 Ja, sowohl Kernkomponenten für adaptive Formulare als auch Headless-Formulare sind mit AEM Forms 6.5 Service Pack 16 und höher verfügbar.
 
@@ -614,6 +604,6 @@ Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Hea
 
 * [Aktualisierungsstile für die auf Kernkomponenten basierenden adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Adaptive Headless-Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
 * [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
