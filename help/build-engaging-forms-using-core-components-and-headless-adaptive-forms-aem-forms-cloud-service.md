@@ -5,10 +5,14 @@ description: Erstellen ansprechender Formulare mithilfe von Kernkomponenten und 
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 63%
+source-wordcount: 2629
+ht-degree: 59%
 
 ---
 
@@ -407,7 +411,7 @@ Veröffentlichen wir das aktualisierte Formular, um die Änderungen in die verö
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. Öffnen Sie das Eingabeaufforderungsfenster, das zum Starten des Projekts **react-starter-kit-aem-headless-forms** genutzt wird, drücken Sie **Strg+C**,
+1. Öffnen Sie das Eingabeaufforderungsfenster, das zum Starten des Projekts **react-starter-kit-aem-headless-forms** verwendet wird, und drücken Sie **STRG+C** und dann
 geben Sie **Y** ein und drücken Sie die Eingabetaste, um den npm-Prozess zu beenden. Es ist wichtig, den npm-Server zu stoppen, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
 
 1. Schließen Sie Visual Studio Code und das Eingabeaufforderungsfenster.
@@ -494,8 +498,8 @@ So rendern Sie das in der Publishing-Umgebung Ihres Cloud-Service gehostete Form
 
    ![](/help/assets/screenshot2028127129.png)
 
-   Der Befehl startet einen lokalen Entwicklungs-Server und rendert die von AEM abgerufene Formulardefinition mithilfe der 
-Frontend-Bibliothek der Google Material-Benutzeroberfläche auf eine Headless-Weise.
+   Der Befehl startet einen lokalen Entwicklungs-Server und rendert die Formulardefinition, die mithilfe der Google von AEM auf Headless-Weise abgerufen wurde
+Frontend-Bibliothek der Material-Benutzeroberfläche.
 
    >[!NOTE]
    >
@@ -550,7 +554,8 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Diese Änderung erfolgt für Endbenutzerinnen und -benutzer ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für den betreffenden Headless-Kanal. Beispiel: ein Web-Kanal in diesem Labor.
+   Diese Änderung erfolgt für Endbenutzende ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für Headless
+betrachteter Kanal. Beispiel: ein Web-Kanal in diesem Labor.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
@@ -600,10 +605,10 @@ Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Hea
 
 * [Einführung zu Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aktualisierungsstile für die auf Kernkomponenten basierenden adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Headless Adaptive Forms](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
