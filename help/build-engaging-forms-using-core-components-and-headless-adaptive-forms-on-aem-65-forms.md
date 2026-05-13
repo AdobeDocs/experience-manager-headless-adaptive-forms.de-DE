@@ -9,10 +9,20 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 65%
+source-wordcount: 2311
+ht-degree: 63%
 
 ---
 
@@ -40,7 +50,7 @@ So verwenden Sie dieses praktische Labor:
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* Forms [Aktivieren von Headless Adaptive &#x200B;](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
+* [Aktivieren von Headless Adaptive &#x200B;](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
 
 * Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. In den Beispielen in diesem Dokument wird Microsoft Visual Studio Code verwendet.
 
@@ -56,7 +66,7 @@ In dieser Lektion erfahren Sie mehr über AEM 6.5 Forms, indem Sie durch die Ben
 
 ### Übung {#lesson-1-excercise}
 
-1. Öffnen Sie den Browser und geben Sie die URL der Authoring-Umgebung ein. Zum Beispiel:
+1. Öffnen Sie den Browser und geben Sie die URL der Authoring-Umgebung ein. Beispiel:
    [https://localhost:4502](https://localhost:4502).
 
 1. Nachdem Sie angemeldet sind, navigieren Sie zur AEM Forms-Benutzeroberfläche. Klicken Sie auf **Formulare**.
@@ -365,7 +375,7 @@ Veröffentlichen wir das aktualisierte Formular, um die Änderungen in die verö
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. Öffnen Sie das Eingabeaufforderungsfenster, das zum Starten des Projekts **react-starter-kit-aem-headless-forms** genutzt wird, drücken Sie **Strg+C**,
+1. Öffnen Sie das Eingabeaufforderungsfenster, das zum Starten des Projekts **react-starter-kit-aem-headless-forms** verwendet wird, und drücken Sie **STRG+C** und dann
 geben Sie **Y** ein und drücken Sie die Eingabetaste, um den npm-Prozess zu beenden. Es ist wichtig, den npm-Server zu stoppen, damit er nicht mit dem nächsten Satz von Übungen in Konflikt gerät.
 
 1. Schließen Sie Visual Studio Code und das Eingabeaufforderungsfenster.
@@ -499,7 +509,8 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Diese Änderung erfolgt für Endbenutzerinnen und -benutzer ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für den betreffenden Headless-Kanal. Beispiel: ein Web-Kanal in diesem Labor.
+   Diese Änderung erfolgt für Endbenutzende ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für Headless
+betrachteter Kanal. Beispiel: ein Web-Kanal in diesem Labor.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 

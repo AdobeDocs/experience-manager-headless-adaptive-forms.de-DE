@@ -5,16 +5,21 @@ description: Erfahren Sie mit der schrittweisen Anleitung von Adobe, wie Sie Hea
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/-jg00RrTORgL35qnU6vjy58UibBQE05bRWmvvYkMjSU
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 70%
+source-wordcount: 782
+ht-degree: 72%
 
 ---
 
 # Aktivieren von adaptiven Headless-Formularen in AEM 6.5 Forms {#enable-headless-adaptive-forms-on-aem-65-forms}
 
-Um adaptive Headless-Formulare in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein auf AEM Archetyp 41 oder höher-basierendes Projekt ein und stellen Sie es für alle Ihre Authoring- und Publishing-Instanzen bereit.
+Um adaptive Headless-Formulare in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie ein auf AEM Archetyp 41 oder höher-basierendes Projekt ein und stellen Sie es für alle Ihre Authoring- und Veröffentlichungsinstanzen bereit.
 
 Durch die Bereitstellung des auf AEM Archetyp 41 oder höher-basierenden Projekts auf Ihren AEM 6.5 Forms-Instanzen erhalten Sie die Möglichkeit, [auf Kernkomponenten basierende adaptive Formulare zu erstellen](create-a-headless-adaptive-form.md). Diese Formulare werden im JSON-Format dargestellt und sowohl als `Headful` als auch als `Headless` adaptives Forms verwendet, was eine größere Flexibilität und Anpassung über eine Reihe von Kanälen hinweg ermöglicht, einschließlich mobiler, Web- und nativer Apps.
 
@@ -30,7 +35,7 @@ Bevor Sie Headless Adaptive Forms in der AEM 6.5 Forms-Umgebung aktivieren,
 
 ## Erstellen und Bereitstellen des neuesten AEM Archetype-basierten Projekts
 
-So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Publishing-Instanzen bereit:
+So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Veröffentlichungsinstanzen bereit:
 
 1. Melden Sie sich bei Ihrem Computer an, hosten Sie Ihre AEM 6.5 Forms-Instanz und führen Sie sie als Administrator aus.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal.
@@ -111,7 +116,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Nachdem das AEM-Archetyp-Projekt erfolgreich erstellt wurde, wird ein AEM-Paket generiert. Sie finden das Paket im [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip
 
-1. Verwenden Sie den [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
+1. Verwenden Sie den [Paket-Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Veröffentlichungsinstanzen.
 
 >[!NOTE]
 >
@@ -131,9 +136,9 @@ Die [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-mana
 ### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt?
 
 
-Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
 * Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie benutzerdefinierte Vorlagen-Designs für adaptive Formulare auf Grundlage der Kernkomponenten.
-* Stellen Sie JSON-Darstellungen adaptiver Formulare auf Grundlage der Kernkomponenten für Kanäle wie Mobile, Web und native Apps und Dienste bereit, die eine Headless-Darstellung des Formulars erfordern.
+* Stellen Sie JSON-Darstellungen adaptiver Formulare auf Grundlage der Kernkomponenten für Kanäle wie Mobile, Web, native Apps und Dienste bereit, die eine Headless-Darstellung des Formulars erfordern.
