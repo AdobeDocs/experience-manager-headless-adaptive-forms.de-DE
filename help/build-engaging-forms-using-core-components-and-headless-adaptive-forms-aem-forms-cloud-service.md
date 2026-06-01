@@ -6,15 +6,12 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
+source-wordcount: 2589
 ht-degree: 59%
 
 ---
@@ -66,13 +63,13 @@ In dieser Lektion lernen Sie die AEM Forms as a Cloud Service-Umgebung kennen, i
 1. Öffnen Sie den Browser und geben Sie die URL der Cloud Service-Autorenumgebung ein. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Melden Sie sich bei der Authoring-Umgebung von Cloud Service an.
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**, um zur AEM Forms-Benutzeroberfläche zu navigieren,
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Schließen Sie alle Popups, die sich auf Voreinstellungen oder Informationen beziehen. Alle verfügbaren Formulare werden angezeigt.
 
@@ -93,9 +90,9 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 
    1. Öffnen Sie <https://pipedream.com/requestbin> in einer neuen Browser-Registerkarte.
    1. Klicken Sie auf **Öffentlichen Container erstellen** und kopieren Sie die Endpunkt-URL.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. Erstellen Sie ein adaptives Formular mithilfe der Assistenten-Oberfläche:
 
@@ -121,16 +118,16 @@ In dieser Lektion erstellen Sie als Business-Anwenderin oder -Anwender ein adapt
 
    1. Ziehen Sie Komponenten per Drag-and-Drop aus dem Komponenten-Browser, um ein Formular ähnlich dem folgenden zu erstellen:
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. Hinzufügen von Überprüfungen zum Formular:
 
    1. Klicken Sie auf die **Telefonnummern**-Komponente, damit das Popup-Menü angezeigt wird. Klicken Sie im Menü auf das **Schraubensymbol**, um das Feld zu konfigurieren.
 
-   1. Öffnen Sie die Registerkarte **Validierungen**, markieren Sie das Feld **Erforderlich**, und klicken Sie auf **Fertig**. Die Erfolgsmeldung wird angezeigt.
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. Öffnen Sie die **Validierungen**, markieren Sie das Feld **Erforderlich** und klicken Sie auf **Fertig**. Die Erfolgsmeldung wird angezeigt.
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. Zeigen Sie es in der Vorschau an und senden Sie es ab.
 
@@ -183,7 +180,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
 1. Öffnen Sie die Eingabeaufforderung oder Shell mit Administratorrechten:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Verwenden Sie in der Eingabeaufforderung den folgenden Befehl, um zum Ordner **c:\git** zu navigieren
 
@@ -209,15 +206,15 @@ Richten Sie ein lokales Repository des Designs ein:
 
 1. Wählen Sie **Trust the authors of all files in the parent folder** und klicken Sie auf **Yes, I trust the authors**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Um das in der Publishing-Umgebung Ihres Cloud-Service gehostete Formular wiederzugeben, benennen Sie die Datei `env_template` um.  Um die Datei umzubenennen, klicken Sie mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Legen Sie die folgenden Werte für die Variablen in der .env-Datei fest und speichern Sie die Datei:
 
@@ -225,7 +222,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
    * **AEM_ADAPTIVE_FORM**: Geben Sie den Pfad des Formulars an. Wenn der Formularpfad beispielsweise `/content/forms/af/registration` ist, würde der Wert dieser Variablen `registration` sein.
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. Erstellen Sie einen lokalen Benutzer in der AEM-Umgebung.
 
@@ -265,12 +262,12 @@ Richten Sie ein lokales Repository des Designs ein:
    >Wenn nach der Ausführung des `npm run live`-Befehls für mehr als 3-4 Minuten ein leerer Browser-Bildschirm erscheint, ändern Sie `localhost` in der Browser-URL zu 127.0.0.1 und drücken **Eingabetaste**.
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. Öffnen Sie in Visual Studio Code die Datei `PROJECT\src\site\_variables.scss`. Beachten Sie, dass die Farbe `$error` ein Farbton von ROT ist.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Übermitteln Sie das Formular im Browser, um die rote Farbe im Feld **Vorname** zu sehen.
 
@@ -278,7 +275,7 @@ Richten Sie ein lokales Repository des Designs ein:
 
 1. Legen Sie die Farbe für **$error** auf **#5736eb** fest und speichern Sie die Datei.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Aktualisieren Sie den Browser und übermitteln Sie das Formular. Beachten Sie, dass sich die Fehlerfarbe im Vornamenfeld entsprechend geändert hat.
 
@@ -303,7 +300,7 @@ Einrichten eines lokalen Repositorys mit dem React-Starter-Projekt:
 
 1. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. Verwenden Sie in der Eingabeaufforderung den folgenden Befehl, um zum Ordner **c:\git** zu navigieren
 
@@ -332,13 +329,13 @@ Einrichten eines lokalen Repositorys mit dem React-Starter-Projekt:
 
    Das Fenster „Visual Studio Code“ wird geöffnet.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 So rendern Sie das in der Publishing-Umgebung Ihres Cloud-Service gehostete Formular:
 
 1. Benennen Sie die Datei env_template in eine Datei .env um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie die Option **Umbenennen**.
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -436,7 +433,7 @@ Richten Sie mithilfe des Ausgangsprojekts der Material-Benutzeroberfläche ein l
 
 1. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. Verwenden Sie in der Eingabeaufforderung den folgenden Befehl, um zum Ordner **c:\git** zu navigieren:
@@ -475,7 +472,7 @@ So rendern Sie das in der Publishing-Umgebung Ihres Cloud-Service gehostete Form
 
 1. Benennen Sie die Datei **env_template** in die Datei **.** um. Klicken Sie zum Umbenennen mit der rechten Maustaste auf die Datei **env_template** und wählen Sie **Umbenennen**.
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. Legen Sie die folgenden Werte für die Variablen in der .env-Datei fest. Speichern Sie die Datei nach dem Aktualisieren der Variablen. Verwenden Sie die Tastenkombination **Strg+S**, um die Datei zu speichern.
 
@@ -514,7 +511,7 @@ Frontend-Bibliothek der Material-Benutzeroberfläche.
 
    Wählen Sie **Aktivieren Sie das Kontrollkästchen, um 5 % Rabatt zu erhalten**. Die nachfolgende Option **Möchten Sie `We.Finance` Firmenkreditkartenformular beantragen?** wird deaktiviert.
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## Lektion 6
 
@@ -560,7 +557,7 @@ Aktualisieren Sie die Variation der Komponenten im Headless-Projekt. So ändern 
    Diese Änderung erfolgt für Endbenutzende ohne Änderung der Formulardefinition auf dem AEM Forms-Server und ist spezifisch für Headless
 betrachteter Kanal. Beispiel: ein Web-Kanal in diesem Labor.
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Schließen Sie Visual Studio Code und das Eingabeaufforderungsfenster.
@@ -608,10 +605,10 @@ Sie wissen jetzt, wie Sie adaptive Formulare erstellen und über Kanäle mit Hea
 
 * [Einführung zu Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Erstellen eines adaptiven Formulars mit Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Aktualisierungsstile für die auf Kernkomponenten basierenden adaptiven Formulare](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Headless Adaptive Forms](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/de/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Verwenden eines Headless-React-Starter-Kits](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
