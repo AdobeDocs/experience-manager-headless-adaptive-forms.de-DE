@@ -10,9 +10,15 @@ topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
 TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
 source-wordcount: 2301
@@ -44,7 +50,7 @@ So verwenden Sie dieses praktische Labor:
 
 * Installieren Sie [Node.js 16.13.0 oder höher](https://nodejs.org/de/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* [Aktivieren von Headless Adaptive ](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
+* [Aktivieren von Headless Adaptive &#x200B;](enable-headless-adaptive-forms-and-core-components.md) in Ihrer AEM 6.5 Forms-Umgebung.
 
 * Installieren Sie [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oder einen beliebigen Text-Editor. In den Beispielen in diesem Dokument wird Microsoft Visual Studio Code verwendet.
 
