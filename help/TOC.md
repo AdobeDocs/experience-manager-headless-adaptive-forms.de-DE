@@ -5,7 +5,8 @@ user-guide-description: Dokumentation zu adaptiven Headless-Formularen von Adobe
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+nudge: true
+source-git-commit: 2b4840d39f7e98684003a941e96f45dede196f23
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 51%
@@ -34,8 +35,8 @@ ht-degree: 51%
 + Erstellen von adaptiven Headless-Formularen {#authoring-headless-adaptive-forms}
    + [Erstellen eines adaptiven Headless-Formulars mit dem Editor für adaptive Forms](create-a-headless-adaptive-form.md)
 + Entwicklerreferenz {#developer-reference}
-   + [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=de)
-   + [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de)
+   + [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [Headless-APIs für adaptive Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Häufig gestellte Fragen](faq.md)
 + [Fehlerbehebung](troubleshooting.md)
