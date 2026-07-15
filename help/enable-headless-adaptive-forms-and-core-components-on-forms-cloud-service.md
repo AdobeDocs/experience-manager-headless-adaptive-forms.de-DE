@@ -9,7 +9,6 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
@@ -19,12 +18,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
-source-wordcount: 943
+source-wordcount: 946
 ht-degree: 72%
 
 ---
+
 
 # Aktivieren von adaptiven Headless-Formularen in AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -33,23 +34,18 @@ Indem Sie adaptive Headless-Formulare in AEM Forms as a Cloud Service aktivieren
 ## Überlegungen
 
 * Bei Erstellung eines neuen AEM Forms as a Cloud Service-Programms [sind adaptive Headless-Formulare für Ihre Umgebungen bereits aktiviert](#are-adaptive-forms-core-components-enabled-for-my-environment).
-
 * Wenn Sie ein älteres Forms as a Cloud Service-Programm ausführen, bei dem Kernkomponenten [nicht aktiviert](#enable-components), fügen Sie zunächst [Abhängigkeiten für adaptive Forms-Kernkomponenten](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) zu Ihrem Cloud Service-Repository hinzu. Stellen Sie das aktualisierte Repository in jeder Umgebung bereit, um Headless-adaptive Formulare zu aktivieren.
-
 * Wenn Sie in Ihrer Cloud Service-Umgebung bereits [auf Kernkomponenten basierende adaptive Formulare erstellen](create-a-headless-adaptive-form.md) werden Headless-adaptive Formulare automatisch aktiviert. Sie können diese Formulare dann als Headless-Erlebnisse für Mobilgeräte, Web, native Apps oder jeden Service bereitstellen, der sie erfordert.
 
 >[!NOTE]
 >
->
-> Adobe bietet ein adaptives Forms [Starter Kit (React-App)](create-and-publish-a-headless-form.md) um Entwicklerinnen und Entwicklern zu helfen, schnell mit der Headless Adaptive Forms-Entwicklung zu beginnen, ohne Headless Adaptive Forms in der AEM Forms as a Cloud Service-Umgebung zu aktivieren. Sie können adaptive Headless-Formulare später, nach einer kurzen praktischen Übung zur Erstellung von Headless-Formularen[, in Ihrer Cloud Service-Umgebung aktivieren](create-and-publish-a-headless-form.md).
+>Adobe bietet ein adaptives Forms [Starter Kit (React-App)](create-and-publish-a-headless-form.md) um Entwicklerinnen und Entwicklern zu helfen, schnell mit der Headless Adaptive Forms-Entwicklung zu beginnen, ohne Headless Adaptive Forms in der AEM Forms as a Cloud Service-Umgebung zu aktivieren. Sie können adaptive Headless-Formulare später, nach einer kurzen praktischen Übung zur Erstellung von Headless-Formularen[, in Ihrer Cloud Service-Umgebung aktivieren](create-and-publish-a-headless-form.md).
 
 ## Aktivieren von adaptiven Headless-Formularen in einer AEM Forms as a Cloud Service-Umgebung
 
 Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive Headless-Formulare für eine AEM Forms as a Cloud Service-Umgebung zu aktivieren
 
-<!-- Missing image ALT tag -->
-![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
-
+![Formularbild aktivieren](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. Klonen des AEM Forms as a Cloud Service-Git-Repositorys {#clone-git-repository}
 
@@ -207,18 +203,18 @@ Führen Sie folgende Schritte in der vorgegebenen Reihenfolge aus, um adaptive H
    >[!NOTE]
    >
    >
-   >  Ersetzen Sie `${appId}` durch Ihre appId.
+   >Ersetzen Sie `${appId}` durch Ihre appId.
    >
-   >  Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Begriff `-packages/application/install`. Der Text vor dem Begriff `-packages/application/install` ist Ihre `${appId}`. Der folgende Code `myheadlessform` ist zum Beispiel `${appId}`.
+   >Um Ihre `${appId}` zu finden, suchen Sie in der Datei `[AEM Repository Folder]/all/pom.xml` den Begriff `-packages/application/install`. Der Text vor dem Begriff `-packages/application/install` ist Ihre `${appId}`. Der folgende Code `myheadlessform` ist zum Beispiel `${appId}`.
    >
-   >   ```
-   >             <embedded>
-   >                     <groupId>com.myheadlessform</groupId>
-   >                     <artifactId>myheadlessform.ui.apps<artifactId>
-   >                     <type>zip</type>
-   >                   <target>/apps/myheadlessform-packages/application install</target>
-   >             </embedded>
-   >   ```
+   >```
+   >         <embedded>
+   >                 <groupId>com.myheadlessform</groupId>
+   >                 <artifactId>myheadlessform.ui.apps<artifactId>
+   >                 <type>zip</type>
+   >               <target>/apps/myheadlessform-packages/application install</target>
+   >         </embedded>
+   >```
 
 1. Fügen Sie im Abschnitt `<dependencies>` der Datei `[AEM Repository Folder]/all/pom.xml` die folgenden Abhängigkeiten hinzu und speichern Sie die Datei:
 
