@@ -8,23 +8,33 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-TQID: https://experienceleague.adobe.com/xj-VI30ga7Ige8ljIaoCD0IWQt-jHzo4hsqOcH4ibGs
+TQID: 'https://experienceleague.adobe.com/xj-VI30ga7Ige8ljIaoCD0IWQt-jHzo4hsqOcH4ibGs'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Beginner
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1060'
 ht-degree: 57%
-
 ---
-
 # Verwenden einer benutzerdefinierten React-Bibliothek zum Rendern eines Headless-Formulars
 
 <!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
@@ -67,10 +77,10 @@ Dadurch werden die npm-Bibliotheken der Google Material-Benutzeroberfläche inst
 
 Erstellen wir eine benutzerdefinierte Komponente, die die standardmäßige Komponente [Texteingabe](https://spectrum.adobe.com/page/text-field/) durch die Komponente [Textfeld der Google-](https://mui.com/material-ui/react-text-field/) ersetzt.
 
-Für jeden Komponententyp (fieldType oder [), &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) `:type` in einer Headless-Formulardefinition verwendet wird, ist eine separate Komponente erforderlich. Beispielsweise sind im Kontaktformular, das Sie im vorherigen Abschnitt erstellt haben, die Felder Name, E-Mail und Telefon vom Typ `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) und das Meldungsfeld vom Typ `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
+Für jeden Komponententyp (fieldType oder [), ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) `:type` in einer Headless-Formulardefinition verwendet wird, ist eine separate Komponente erforderlich. Beispielsweise sind im Kontaktformular, das Sie im vorherigen Abschnitt erstellt haben, die Felder Name, E-Mail und Telefon vom Typ `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) und das Meldungsfeld vom Typ `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Erstellen wir eine benutzerdefinierte Komponente, um alle Formularfelder, die die Eigenschaft „fieldType[&#x200B; „text-input“ &#x200B;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def), mit der Komponente &quot;[&#x200B; UI Text Field](https://mui.com/material-ui/react-text-field/) zu überlagern.
+Erstellen wir eine benutzerdefinierte Komponente, um alle Formularfelder, die die Eigenschaft „fieldType[ „text-input“ ](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def), mit der Komponente &quot;[ UI Text Field](https://mui.com/material-ui/react-text-field/) zu überlagern.
 
 
 So erstellen Sie die benutzerdefinierten Komponente und ordnen sie der Eigenschaft [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) zu:

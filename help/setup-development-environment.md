@@ -3,13 +3,14 @@ title: Einrichten einer Entwicklungsumgebung für adaptive AEM Headless-Formular
 description: Einrichten einer Entwicklungsumgebung für adaptive AEM Headless-Formulare
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 62%
-
 ---
-
 
 # Einrichten einer lokalen Entwicklungsumgebung {#headless-adaptive-forms-setup-development-environment}
 
@@ -78,7 +79,7 @@ Es liegt im ZIP-Format vor. Die unterstützte Version ist aem-sdk-2022.7.8085.20
 
    >[!NOTE]
    >
-   > Doppelklicken Sie nicht auf die JAR-Datei, um sie zu starten. Dies führt zu einem [Fehler](https://experienceleague.adobe.com/de/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Doppelklicken Sie nicht auf die JAR-Datei, um sie zu starten. Dies führt zu einem [Fehler](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Öffnen Sie eine Eingabeaufforderung:
    * Verwenden Sie unter Windows die Option **Als Administrator ausführen**, um die Eingabeaufforderung im erhöhten Modus zu öffnen.

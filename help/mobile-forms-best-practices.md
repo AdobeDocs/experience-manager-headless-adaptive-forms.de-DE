@@ -9,13 +9,30 @@ level: Beginner, Intermediate
 keywords: Mobile Forms, native App, Offline-Formulare, Headless-API
 index: true
 exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 5%
-
 ---
-
 # Best Practices für Mobile Forms {#mobile-forms-best-practices}
 
 Für Anwendungsfälle von mobilen und Offline-Formularen wird empfohlen, eine eigene native App zu erstellen und Formulardefinitionen über die Headless Adaptive Forms-API abzurufen. Dadurch erhalten Sie die volle Kontrolle über das mobile Erlebnis und die kontinuierliche Unterstützung bei der Weiterentwicklung mobiler Plattformen.
@@ -38,4 +55,4 @@ Dieser Ansatz sorgt dafür, dass Ihre App auch dann wartbar bleibt, wenn sich An
 * [APIs für adaptive Headless-Formulare](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Formulare programmgesteuert auflisten, abrufen, validieren und senden.
 * [Architektur](architecture.md) - So funktionieren Headless-adaptive Formulare und wie sie von Frontend-Apps genutzt werden.
 
-Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=de).
+Eine schrittweise Integration finden Sie unter [Erstellen und Veröffentlichen eines Headless-Formulars](create-and-publish-a-headless-form.md) und im [Entwicklerportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
