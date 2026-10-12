@@ -7,32 +7,47 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: Headless, adaptives Formular, Architektur
+Applies to: Adaptive Forms, Core Components
 index: true
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-TQID: https://experienceleague.adobe.com/Ox-1cxb5UK-oWcWzrRKcRAzCVaAGhUjQsjtnaURJXiw
+TQID: 'https://experienceleague.adobe.com/Ox-1cxb5UK-oWcWzrRKcRAzCVaAGhUjQsjtnaURJXiw'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
   - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Insights
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: '994'
 ht-degree: 54%
-
 ---
-
 # Wie funktionieren adaptive Headless-Formulare?
 
 Ein adaptives Headless-Formular ist im Wesentlichen eine JSON-Struktur (Schema), die aus Formularfeldern (Textfeld, Auswahlmöglichkeiten und viele weitere Felder) und entsprechenden Regeln (bedingte Logik) besteht, um dem Formular interaktives Verhalten hinzuzufügen. Sie können REST-APIs in Ihrer Anwendung oder Website verwenden, um die gehostete JSON-Struktur anzufordern und die JSON-Struktur nativ als Formular in Ihrer App oder Website zu rendern. Ein einzelnes adaptives Headless-Formular kann mehrere Web-Seiten und Anwendungen bedienen, ohne dass App- oder Website-spezifische Änderungen daran vorgenommen werden müssen.
@@ -93,7 +108,7 @@ Das Forms Web SDK stellt die APIs zur Validierung von Einschränkungen bereit, d
 
 Alle diese Komponenten sind im AEM-Archetyp enthalten. Wenn Sie ein AEM-Archetyp 37- oder neueres Projekt für Headless-adaptive Formulare erstellen, wird die neueste Version der oben aufgeführten Bibliotheken in das Projekt aufgenommen.
 
-* **Code-Playground**: [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=de) ist eine interaktive Umgebung, in der Entwickler mit den Funktionen von Headless Adaptive Forms experimentieren, mehr darüber erfahren und sie testen können.
+* **Code-Playground**: [Code-Playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) ist eine interaktive Umgebung, in der Entwickler mit den Funktionen von Headless Adaptive Forms experimentieren, mehr darüber erfahren und sie testen können.
 
 **Starter Application**: Adobe hat auch eine Anwendung für die ersten Schritte veröffentlicht, die Ihnen dabei hilft, schnell mit adaptiven Headless-Formularen zu beginnen.
 

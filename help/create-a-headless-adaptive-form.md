@@ -8,25 +8,36 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+TQID: 'https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Content structure
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1328
+source-wordcount: '1328'
 ht-degree: 64%
-
 ---
-
 # Erstellen eines adaptiven Headless-Formulars mit dem Editor für adaptive Formulare {#create-a-headless-adaptive-form-using-adaptive-forms-editor}
 
 AEM Forms as a Cloud Service bietet einen benutzerfreundlichen Editor zum Erstellen von adaptiven Headless-Formularen. Mit mehr als 24 verfügbaren Kernkomponenten können Sie ein Formular einfach erstellen, indem Sie Komponenten per Drag-and-Drop in den Editor ziehen. Darüber hinaus können Sie mit dem Regeleditor Validierungen zu Ihren Formularfeldern hinzufügen.
@@ -61,8 +72,8 @@ Sie benötigen Folgendes, um ein adaptives Formular mit dem Editor für adaptive
 
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und zum Senden einer Aktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Der Cloud-Service bietet eine OOTB-Vorlage mit leerem Namen:
 
-   * Die Vorlage `blank Adaptive Forms (Core Components)` ist in jedem neuen AEM Forms as a Cloud Service-Programm enthalten.
-   * Daneben gibt es die Möglichkeit, [eine neue Vorlage für adaptive Formulare (Kernkomponenten)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) von Grund auf neu zu erstellen.
+  * Die Vorlage `blank Adaptive Forms (Core Components)` ist in jedem neuen AEM Forms as a Cloud Service-Programm enthalten.
+  * Daneben gibt es die Möglichkeit, [eine neue Vorlage für adaptive Formulare (Kernkomponenten)](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) von Grund auf neu zu erstellen.
 
 * **Ein adaptives Formular**: Ein Design enthält Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider.  Die Vorlage `Canvas` ist in jedem neuen AEM Forms as a Cloud Service-Programm enthalten.
 
